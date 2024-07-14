@@ -1,0 +1,12 @@
+{
+  "[data-index='2'] .b-grid-cell": {
+    "title": "Tasks",
+    "content": "Displayed in columns to the left",
+    "align": "l0-r0"
+  },
+  ".b-gantt-task-wrap[data-task-id='12']": {
+    "title": "Task bars",
+    "content": "Shown in the right section. Draggable and resizable using the mouse",
+    "align": "r0-l0"
+  }
+}

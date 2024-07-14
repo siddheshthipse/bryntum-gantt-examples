@@ -1,0 +1,14 @@
+/**
+ * App component styles
+ */
+@import "@bryntum/gantt/gantt.material.css";
+@import "@bryntum/demo-resources/scss/example.scss";
+
+bryntum-gantt {
+    flex : 1;
+}
+
+.b-checkbox.b-bright label {
+    color        : white;
+    margin-right : 0.5em;
+}

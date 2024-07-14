@@ -1,0 +1,10 @@
+{
+  ".b-resourceutilization .b-grid-header": {
+    "align": {
+      "align": "t-b",
+      "offset": [0, 180]
+    },
+    "title": "Drag resources onto tasks",
+    "content": "Drag a resource onto a task bar or row in the Gantt to assign it to the task."
+  }
+}

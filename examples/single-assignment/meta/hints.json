@@ -1,0 +1,11 @@
+{
+  "[data-index='2'] [data-column=assignments]": {
+    "title": "Single Assignment column",
+    "content": "Allows to select only one resource",
+    "align": "l0-r0"
+  },
+  "[data-task-id='15'] .b-gantt-task": {
+    "title": "New field in Task Editor",
+    "content": "Task Editor changed to support single resource assignment"
+  }
+}

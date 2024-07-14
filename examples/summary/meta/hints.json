@@ -1,0 +1,10 @@
+{
+  ".b-grid-footer-scroller-locked": {
+    "title": "Column summaries",
+    "content": "Supports basic calculations such as sum and average"
+  },
+  ".b-grid-footer-scroller-normal": {
+    "title": "Time axis summaries",
+    "content": "Display summary for each tick interval in the time axis using summary renderers"
+  }
+}

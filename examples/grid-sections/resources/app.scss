@@ -1,0 +1,29 @@
+.b-status-column-cell {
+    font-size : 0.8em;
+
+    i::before {
+        margin-inline-end : .5em;
+    }
+
+    .Started {
+        color : #bbb;
+    }
+
+    .Late {
+        color : #ff5722;
+    }
+
+    .Completed {
+        color : #34d844;
+    }
+}
+
+.b-action-ct {
+    width           : 100%;
+    justify-content : space-around;
+
+    .b-action-item {
+        color     : #666;
+        font-size : 1.1em;
+    }
+}

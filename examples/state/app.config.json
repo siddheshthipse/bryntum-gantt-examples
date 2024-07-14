@@ -1,0 +1,4 @@
+{
+  "title": "Gantt state demo",
+  "description": "This example demonstrates auto state handling for the gantt. It allows the user to store state in localStorage and restore it across page reloads"
+}

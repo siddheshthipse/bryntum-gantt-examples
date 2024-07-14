@@ -1,0 +1,10 @@
+{
+  "[data-ref=fillTicks]": {
+    "title": "Toggle stretching",
+    "content": "Click to toggle the fillTicks setting on/off"
+  },
+  ".b-gantt-task-wrap[data-task-id='11']": {
+    "title": "Stretched task",
+    "content": "This task starts at 8 AM and ends at 5 PM, but is stretched to fill the whole day"
+  }
+}

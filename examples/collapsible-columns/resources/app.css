@@ -1,0 +1,36 @@
+.calendar{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  align-items:center;
+  margin-right:8px;
+  background:#fff;
+  width:24px;
+  height:28px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.1254901961);
+  border-radius:4px;
+  overflow:hidden;
+}
+.calendar::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:9px;
+  background:#d93737;
+}
+.calendar .date{
+  position:absolute;
+  font-size:12px;
+  bottom:3px;
+  color:#333;
+}
+.calendar .month{
+  position:absolute;
+  font-size:8px;
+  top:-1px;
+  color:#fff;
+}
+
+/*# sourceMappingURL=app.css.map */

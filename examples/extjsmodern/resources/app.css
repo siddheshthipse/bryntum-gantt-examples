@@ -1,0 +1,99 @@
+.b-gantt{
+  font-size:14px;
+}
+
+.b-grid-cell{
+  font-weight:400;
+}
+
+.b-grid-header{
+  color:#000;
+  font-weight:600;
+  font-size:13px;
+}
+
+.x-panel.x-split-east{
+  padding-right:auto;
+  padding-inline-end:10px;
+}
+
+.b-rtl .x-panelresizer.x-east{
+  top:0;
+  right:auto;
+  left:0;
+  bottom:0;
+}
+
+.b-grid-header-container{
+  box-shadow:none;
+  border-bottom:1px solid #e2e2e2;
+  background-color:#f5f5f5;
+}
+.b-grid-header-container .b-sch-timeaxiscolumn{
+  background-color:#f5f5f5;
+}
+
+.b-grid-header{
+  background-color:#f5f5f5;
+}
+
+.b-sch-event{
+  font-size:0.35em;
+  font-weight:800;
+  border-left:5px solid rgba(255, 255, 255, 0.5);
+  border-radius:2px;
+  opacity:0.8;
+}
+.b-sch-event:hover{
+  opacity:1;
+}
+
+.b-grid-splitter{
+  box-shadow:none;
+}
+
+.bryntum-gantt .b-grid{
+  font-size:14px;
+}
+.bryntum-gantt .b-grid-header-container{
+  box-shadow:none;
+  border-bottom:1px solid #e2e2e2;
+  background-color:#f5f5f5;
+}
+.bryntum-gantt .b-grid-splitter{
+  box-shadow:none;
+}
+.bryntum-gantt .x-panelheader .x-field .x-label-el,
+.bryntum-gantt .x-panelheader .x-field .x-input-el{
+  font-size:16px;
+}
+.bryntum-gantt .x-panelheader .x-field .x-label-el,
+.bryntum-gantt .x-panelheader .x-field .x-trigger .x-icon-el,
+.bryntum-gantt .x-panelheader .x-field .x-input-el{
+  color:#fff;
+}
+.bryntum-gantt .x-panelheader .x-button{
+  margin-left:0.5em;
+}
+
+#main-view > .x-panelheader{
+  background-color:#0076f8;
+}
+#main-view > .x-panelheader h1{
+  font-size:1em;
+  font-weight:400;
+}
+#main-view > .x-panelheader .title-link a{
+  color:#fff;
+  text-decoration:none;
+}
+#main-view > .x-panelheader .x-paneltitle{
+  padding:0.1rem;
+}
+#main-view > .x-panelheader .x-paneltitle .x-text-el{
+  background:url(../../_shared/images/bryntum-symbol-white.svg) no-repeat left center;
+  padding-inline-start:2em;
+  background-size:1.8em;
+}
+
+/*# sourceMappingURL=app.css.map */

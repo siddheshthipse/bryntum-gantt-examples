@@ -1,0 +1,14 @@
+{
+  "[data-task-id='1']": {
+    "title": "Task color",
+    "content": "Chose one of 17 available colors by setting `eventColor` on each task"
+  },
+  "[data-task-id='7']": {
+    "title": "Task color editors",
+    "content": "Open context menu or double-tap to open task editor. Here you can pick a color for each task"
+  },
+  "[data-task-id='16']": {
+    "title": "Custom CSS colors",
+    "content": "You can use any CSS color value. Simply set the `eventColor` field on each task to whatever you want"
+  }
+}

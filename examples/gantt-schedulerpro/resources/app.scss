@@ -1,0 +1,17 @@
+.b-sch-event .b-sch-event-content {
+    font-size : 12px;
+}
+
+.b-theme-stockholm .b-sch-event {
+    border-radius : 2px;
+}
+
+.b-percent-bar-cell .b-percent-bar-outer {
+    height        : 1em;
+    border-radius : 1em;
+
+    .b-percent-bar {
+        border-radius    : 1em;
+        background-color : #8ee997;
+    }
+}

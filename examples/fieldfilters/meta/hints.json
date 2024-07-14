@@ -1,0 +1,11 @@
+{
+  ".b-fieldfilterpickergroup": {
+    "title": "FieldFilterPickerGroup",
+    "content": "Enables defining one or more filters on the fields in the Store",
+    "align": "b-t"
+  },
+  ".b-grid-header[data-column=endDate]": {
+    "content": "Columns marked with an asterisk will not have their filters shown at right, due to the <code>allowedFieldNames</code> config",
+    "align": "t0-b0"
+  }
+}

@@ -1,0 +1,9 @@
+[data-column=wbsValue]{
+  background:#f7f7f7;
+  color:#999;
+}
+.b-theme-classic-dark [data-column=wbsValue]{
+  background:rgba(247, 247, 247, 0.1019607843);
+}
+
+/*# sourceMappingURL=app.css.map */

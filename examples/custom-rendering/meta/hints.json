@@ -1,0 +1,10 @@
+{
+  "[data-task-id='13'] .b-gantt-task": {
+    "title": "<i class='b-fa b-fa-wand-magic-sparkles'></i>Custom task bar content",
+    "content": "Using the <code>taskRenderer</code> you can output any HTML you want inside the task bar element"
+  },
+  ".b-fa-bars": {
+    "title": "<i class='b-fa b-fa-sliders'></i>Customization menu",
+    "content": "Click to reveal a customization panel where you can change some of the many UI settings that are toggleable during runtime"
+  }
+}

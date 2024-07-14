@@ -1,0 +1,24 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<div class = "demo-toolbar align-right">
+    <bryntum-checkbox
+        text = 'Show Rollups'
+        tooltip = 'Toggle rollups showing'
+        [checked] = true
+        cls = 'b-blue'
+        (onAction) = "onShowRollups($event)"
+    ></bryntum-checkbox>
+</div>
+
+<bryntum-gantt
+    #gantt
+    [barMargin] = "ganttConfig.barMargin!"
+    [columnLines] = "ganttConfig.columnLines!"
+    [columns] = "ganttConfig.columns!"
+    [project] = "ganttConfig.project!"
+    [rollupsFeature] = "ganttConfig.features!.rollups!"
+    [rowHeight] = "ganttConfig.rowHeight!"
+    [subGridConfigs] = "ganttConfig.subGridConfigs!"
+    [viewPreset] = "ganttConfig.viewPreset!"
+></bryntum-gantt>

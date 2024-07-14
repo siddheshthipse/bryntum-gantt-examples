@@ -1,0 +1,70 @@
+.b-color-picker-container {
+    width            : 18em !important;
+    display          : flex;
+    flex-wrap        : wrap;
+    background-color : rgb(248, 249, 250);
+
+    .b-color-picker-item {
+        width   : 3em;
+        height  : 3em;
+        padding : 0.3em;
+
+        div {
+            width  : 100%;
+            height : 100%;
+        }
+
+        &:hover {
+            box-shadow : 0 0 1em rgba(0, 0, 0, 0.7)
+        }
+    }
+}
+
+.b-gantt {
+    .b-gantt-task {
+
+        .b-task-percent-bar,
+        &:hover .b-task-percent-bar {
+            background-color : rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.b-inline-list {
+    display    : flex;
+    flex-flow  : row wrap;
+    column-gap : 0.5em;
+    row-gap    : 0.5em;
+    padding    : 0.5em;
+
+    .b-list-item {
+        // Widths are 1/3 minus their 1/3 share of the cumulative 1em column gap on the parent flexbox
+        flex       : 0 0 calc(33.333% - 0.333em);
+        box-shadow : lightgrey 0px 0px 4px 0px;
+        display    : flex;
+        column-gap : 1em;
+
+        .b-resource-detail {
+            flex : 1;
+        }
+
+        .b-resource-city {
+            display         : flex;
+            justify-content : space-between;
+        }
+
+        img {
+            height        : 2em;
+            width         : 2em;
+            border-radius : 50%;;
+        }
+
+        i {
+            color : red;
+        }
+    }
+}
+
+.b-filestab .b-grid-cell i {
+    margin-inline-end : 0.3em;
+}

@@ -1,0 +1,43 @@
+// Row mode
+.b-timeranges-body-canvas > .b-tasknonworkingtime {
+    background : #ebf6ffbb;
+    color      : #83b5fe;
+    transition : background 0.5s;
+
+    .b-theme-classic-dark & {
+        background : #33333366;
+    }
+
+    // Custom styling enabled by pressing the corresponding button in the demo
+    .b-custom-nonworkingtime & {
+        background : repeating-linear-gradient(135deg, #9B9B9B26, #9B9B9B26 4px, transparent 4px, transparent 8px);
+    }
+}
+
+// Bar mode
+.b-gantt-task > .b-tasknonworkingtime {
+    // Custom styling enabled by pressing the corresponding button in the demo
+    .b-custom-nonworkingtime & {
+        background : repeating-linear-gradient(135deg, #FFFFFF4C, #FFFFFF4C 4px, rgba(255, 0, 0, 0.2) 4px, rgba(255, 0, 0, 0.2) 8px);
+    }
+}
+
+.b-tasknonworkingtime .b-fa-warning {
+    color     : orange;
+    font-size : 1.5em;
+}
+
+.reboot {
+    font-size : 0;
+
+    .b-fa {
+        font-size : 1rem;
+    }
+}
+
+.b-nonworkingtime-tip-title {
+    display     : flex;
+    margin-top  : 0;
+    font-weight : bold;
+    gap         : 0.5em;
+}

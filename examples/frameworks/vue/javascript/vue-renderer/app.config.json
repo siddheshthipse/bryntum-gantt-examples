@@ -1,0 +1,4 @@
+{
+  "title": "Cell renderer demo (Vue 2)",
+  "description": "Demo of Bryntum Gantt for Vue with column renderers outputting Vue components into cells."
+}

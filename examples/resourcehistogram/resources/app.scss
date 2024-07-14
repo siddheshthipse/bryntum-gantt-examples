@@ -1,0 +1,9 @@
+@import '../../../resources/sass/variables.scss';
+
+.histogram-toolbar {
+    justify-content : flex-end;
+    border-bottom   : solid 1px $widget-border-color;
+    .b-checkbox {
+        margin-inline-end : 1em;
+    }
+}

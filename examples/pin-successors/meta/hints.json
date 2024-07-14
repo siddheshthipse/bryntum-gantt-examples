@@ -1,0 +1,13 @@
+{
+  ".b-toolbar": {
+    "content": "Press Ctrl (Win) or Cmd (Mac) to pin successors after drag-drop"
+  },
+  "[data-task-id='15'] .b-gantt-task": {
+    "title": "Task bar",
+    "content": "Drag and drop this task. Dependent tasks are also moved"
+  },
+  "[data-task-id='31'] .b-gantt-task": {
+    "title": "Task bar",
+    "content": "Drag and drop this task while holding CTRL key. Dependent tasks will stay in place"
+  }
+}

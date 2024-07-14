@@ -1,0 +1,12 @@
+{
+  "[data-ref=earlyButton]": {
+    "title": "Early render",
+    "content": "Click to reload tasks using early render mode (the default). Renders before calculations",
+    "align": "t-b"
+  },
+  "[data-ref=legacyButton]": {
+    "title": "Legacy render",
+    "content": "Click to reload tasks using legacy render mode. Renders after calculations",
+    "align": "l-r"
+  }
+}

@@ -1,0 +1,99 @@
+.b-gantt-task-tooltip {
+    max-width : none;
+
+    .b-panel-content {
+        display               : grid;
+        grid-template-columns : 15em auto;
+        grid-column-gap       : 2em;
+        grid-row-gap          : 2em;
+    }
+
+    .field {
+        display        : flex;
+        flex-direction : column;
+        font-weight    : 500;
+
+        label {
+            margin-bottom : 0.5em;
+            color         : #888;
+        }
+    }
+
+    .b-avatar-container {
+        display : flex;
+        gap     : 0.3em;
+    }
+}
+
+body:not(.b-theme-classic-dark) {
+
+    .b-resource-avatar-tooltip,
+    .b-gantt-task-tooltip {
+        &,.b-panel-body-wrap {
+            background-color : #fff;
+        }
+    }
+
+    .field {
+        span {
+            color : #333;
+        }
+    }
+}
+
+.b-resource-avatar-tooltip {
+    min-width : 12em;
+
+    strong {
+        font-size     : 1.3em;
+        width         : 100%;
+        margin-bottom : .6em;
+    }
+
+    img {
+        height            : 4em;
+        width             : 4em;
+        margin-inline-end : 1em;
+    }
+
+    .b-panel-content {
+        display         : flex;
+        align-items     : center;
+        justify-content : unset;
+    }
+
+    .data {
+        display        : flex;
+        flex-direction : column;
+        gap            : .6em;
+    }
+
+
+    i {
+        margin-inline-end : .6em;
+    }
+
+    .overflow {
+        text-align : center;
+        margin-top : .5em;
+    }
+
+    span {
+        width     : 4em;
+        font-size : .9em;
+        display   : inline-block;
+    }
+}
+
+.b-resource-avatar-tooltip,
+.b-gantt-task-tooltip {
+    &,
+    > .b-panel-body-wrap > .b-panel-content {
+        border-radius : .5em !important;
+    }
+
+    .b-panel-content {
+        padding : 2em !important;
+        margin  : 0 !important;
+    }
+}

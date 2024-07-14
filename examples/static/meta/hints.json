@@ -1,0 +1,12 @@
+{
+  "[data-ref='reloadBtn']": {
+    "title": "Reloads data",
+    "content": "Clicking this disables task start, end, duration and complete % calculations and reloads the \"dirty\" data",
+    "align": "t0-b0"
+  },
+  "[data-ref='recalculateBtn']": {
+    "title": "Fixes data",
+    "content": "Clicking this enables task start, end, duration and complete % calculations back and thus fixes the \"dirty\" data",
+    "align": "l50-r0"
+  }
+}

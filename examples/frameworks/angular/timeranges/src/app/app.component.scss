@@ -1,0 +1,17 @@
+/**
+ * App component styling
+ */
+@import "@bryntum/gantt/gantt.material.css";
+@import "@bryntum/demo-resources/scss/example.scss";
+
+#container {
+    display        : flex;
+    flex-direction : row;
+    flex           : 1 1 0;
+}
+
+.time-range-grid {
+    display        : flex;
+    flex-direction : column;
+    width          : 30em;
+}

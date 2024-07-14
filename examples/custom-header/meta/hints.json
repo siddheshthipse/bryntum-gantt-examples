@@ -1,0 +1,6 @@
+{
+  ".b-lowest .b-sch-header-timeaxis-cell": {
+    "title": "Custom time axis cell rendering",
+    "content": "Using the <a href='https://bryntum.com/products/scheduler/docs/api/Scheduler/preset/ViewPreset'><code>viewPreset</code></a> you can define any number of header rows for the time axis and render any content into the cells"
+  }
+}

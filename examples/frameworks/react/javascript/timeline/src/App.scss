@@ -1,0 +1,43 @@
+/**
+ * Application styles
+ */
+@import '~@bryntum/demo-resources/scss/example.scss';
+
+.b-widget.b-timeline {
+    flex   : none;
+    height : 15em;
+
+    &.small {
+        height : 10em;
+
+        .b-grid-panel-body {
+            padding-top    : 2em;
+            padding-bottom : 3em;
+        }
+
+        .b-sch-event {
+            font-size : 11px;
+        }
+
+        .b-milestone-wrap .b-milestone label {
+            margin-top : 1em;
+
+            &:before {
+                display : none;
+            }
+        }
+    }
+
+    &.large {
+        height : 20em;
+
+        .b-grid-panel-body {
+            padding-top    : 4em;
+            padding-bottom : 6em;
+        }
+    }
+}
+
+.b-theme-stockholm .demo-toolbar label {
+    text-transform : uppercase;
+}

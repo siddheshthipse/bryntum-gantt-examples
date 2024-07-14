@@ -1,0 +1,10 @@
+{
+  ".b-filepicker": {
+    "title": "",
+    "content": "1. Pick project file"
+  },
+  ".b-load-button": {
+    "title": "",
+    "content": "2. Import it"
+  }
+}

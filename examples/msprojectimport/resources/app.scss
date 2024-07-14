@@ -1,0 +1,16 @@
+.b-gridbase:not(.b-masked) {
+    .b-grid-empty .b-empty-text {
+        height          : 100%;
+        width           : 100%;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        font-size       : 2em;
+        transition      : opacity .4s;
+        opacity         : .3;
+    }
+
+    &.b-dragging-file .b-empty-text {
+        opacity : 1;
+    }
+}

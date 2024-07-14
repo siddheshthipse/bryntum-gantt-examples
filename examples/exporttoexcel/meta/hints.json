@@ -1,0 +1,6 @@
+{
+  "[data-ref=\"excelExportBtn\"]": {
+    "title": "Export with default settings",
+    "content": "Settings are taken automatically from the Scheduler locked columns"
+  }
+}

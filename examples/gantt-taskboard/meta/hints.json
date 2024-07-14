@@ -1,0 +1,6 @@
+{
+  ".b-taskboard": {
+    "title": "Gantt paired with TaskBoard",
+    "content": "Please note that this example uses the Bryntum TaskBoard, which is licensed separately."
+  }
+}

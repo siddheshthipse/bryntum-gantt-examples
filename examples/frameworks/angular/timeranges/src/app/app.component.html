@@ -1,0 +1,44 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<div class = "demo-toolbar align-right">
+    <bryntum-checkbox
+        text = "Show Gantt header elements"
+        tooltip = "Toggles the rendering of time range header elements"
+        [checked] = true
+        cls = "b-blue"
+        (onAction) = "onShowHeaders($event)"
+    ></bryntum-checkbox>
+</div>
+
+<div id = "container">
+    <bryntum-gantt
+        #ganttComponent
+        flex = 1
+        [project] = "ganttConfig.project!"
+        [columns] = "ganttConfig.columns!"
+        [timeRangesFeature] = "ganttConfig.features!.timeRanges!"
+    ></bryntum-gantt>
+    <bryntum-splitter
+        #splitter
+    ></bryntum-splitter>
+    <div class = "time-range-grid">
+        <bryntum-grid
+            #gridComponent
+            flex = 1
+            [columns] = "gridConfig.columns!"
+            [stripeFeature] = "gridConfig.features!.stripe!"
+            [sortFeature] = "gridConfig.features!.sort!"
+            cls="grid-timeranges"
+        ></bryntum-grid>
+        <div class = "demo-toolbar">
+            <bryntum-button
+                text = "Add"
+                icon = "b-fa-plus"
+                cls = "b-green"
+                tooltip = "Add new time range"
+                (onAction) = "onAddRange()"
+            ></bryntum-button>
+        </div>
+    </div>
+</div>

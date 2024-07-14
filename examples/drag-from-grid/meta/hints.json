@@ -1,0 +1,7 @@
+{
+  "[data-ref=unplannedGrid]": {
+    "align": "l-r",
+    "title": "Unplanned tasks",
+    "content": "Drag these tasks onto the Gantt to add them to the project. Please note this is using the <a href=\"//bryntum.com/products/grid\"><strong>Bryntum Grid</strong></a>, licensed separately."
+  }
+}

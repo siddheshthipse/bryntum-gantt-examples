@@ -1,0 +1,4 @@
+{
+  "title": "Static demo",
+  "description": "Shows the Engine static mode when certain fields automatic calculation is disabled which allows to load dirty data as-is"
+}

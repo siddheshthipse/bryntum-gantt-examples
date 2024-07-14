@@ -1,0 +1,9 @@
+{
+  ".filters-panel .b-panel-header": {
+    "title": "Filter",
+    "content": "Check a checkbox to filter to only tasks matching that value"
+  },
+  ".b-grid-header[data-column=priority]": {
+    "content": "Fields with categorical data with a limited number of values are ideal candidates for facet filtering"
+  }
+}

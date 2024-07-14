@@ -1,0 +1,29 @@
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.operator-field {
+  font-weight: bold;
+}
+
+.property-field .b-field-inner,
+.property-field.b-disabled .b-field-inner,
+.operator-field .b-field-inner,
+.operator-field.b-disabled .b-field-inner {
+  border: none;
+  background: none;
+}
+
+.property-field input {
+  font-style: italic;
+}
+
+.operator-field input {
+  font-weight: bold;
+}
+
+.b-fieldfilterpicker-values .b-combo.b-multiselect:not(.b-empty) input::placeholder {
+  color: transparent;
+}

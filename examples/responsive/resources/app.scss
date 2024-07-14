@@ -1,0 +1,26 @@
+.b-responsive-small {
+    .b-grid-header {
+        font-size : .8em;
+    }
+
+    .b-sch-label {
+        font-size : 10px;
+    }
+}
+
+.b-responsive-medium {
+    .b-grid-header {
+        font-size : .9em;
+    }
+}
+
+#container {
+    justify-content : center;
+    background      : #ccc;
+}
+
+.b-gantt {
+    box-shadow : 0 0 15px rgba(0, 0, 0, .2);
+    align-self : center !important;
+    width      : 100%;
+}

@@ -1,0 +1,36 @@
+.b-timeranges-body-canvas > .b-tasknonworkingtime{
+  background:rgba(235, 246, 255, 0.7333333333);
+  color:#83b5fe;
+  transition:background 0.5s;
+}
+.b-theme-classic-dark .b-timeranges-body-canvas > .b-tasknonworkingtime{
+  background:rgba(51, 51, 51, 0.4);
+}
+.b-custom-nonworkingtime .b-timeranges-body-canvas > .b-tasknonworkingtime{
+  background:repeating-linear-gradient(135deg, rgba(155, 155, 155, 0.1490196078), rgba(155, 155, 155, 0.1490196078) 4px, transparent 4px, transparent 8px);
+}
+
+.b-custom-nonworkingtime .b-gantt-task > .b-tasknonworkingtime{
+  background:repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.2980392157), rgba(255, 255, 255, 0.2980392157) 4px, rgba(255, 0, 0, 0.2) 4px, rgba(255, 0, 0, 0.2) 8px);
+}
+
+.b-tasknonworkingtime .b-fa-warning{
+  color:orange;
+  font-size:1.5em;
+}
+
+.reboot{
+  font-size:0;
+}
+.reboot .b-fa{
+  font-size:1rem;
+}
+
+.b-nonworkingtime-tip-title{
+  display:flex;
+  margin-top:0;
+  font-weight:bold;
+  gap:0.5em;
+}
+
+/*# sourceMappingURL=app.css.map */

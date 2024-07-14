@@ -1,0 +1,10 @@
+{
+  ".b-html[data-item-index='3']": {
+    "title": "Current responsive level",
+    "content": "Resize the window to change it"
+  },
+  ".b-buttongroup": {
+    "title": "Force a level",
+    "content": "Pick a level to force change schedulers width"
+  }
+}

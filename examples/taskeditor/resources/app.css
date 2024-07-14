@@ -1,0 +1,57 @@
+.b-color-picker-container{
+  width:18em !important;
+  display:flex;
+  flex-wrap:wrap;
+  background-color:rgb(248, 249, 250);
+}
+.b-color-picker-container .b-color-picker-item{
+  width:3em;
+  height:3em;
+  padding:0.3em;
+}
+.b-color-picker-container .b-color-picker-item div{
+  width:100%;
+  height:100%;
+}
+.b-color-picker-container .b-color-picker-item:hover{
+  box-shadow:0 0 1em rgba(0, 0, 0, 0.7);
+}
+
+.b-gantt .b-gantt-task .b-task-percent-bar, .b-gantt .b-gantt-task:hover .b-task-percent-bar{
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+.b-inline-list{
+  display:flex;
+  flex-flow:row wrap;
+  column-gap:0.5em;
+  row-gap:0.5em;
+  padding:0.5em;
+}
+.b-inline-list .b-list-item{
+  flex:0 0 calc(33.333% - 0.333em);
+  box-shadow:lightgrey 0px 0px 4px 0px;
+  display:flex;
+  column-gap:1em;
+}
+.b-inline-list .b-list-item .b-resource-detail{
+  flex:1;
+}
+.b-inline-list .b-list-item .b-resource-city{
+  display:flex;
+  justify-content:space-between;
+}
+.b-inline-list .b-list-item img{
+  height:2em;
+  width:2em;
+  border-radius:50%;
+}
+.b-inline-list .b-list-item i{
+  color:red;
+}
+
+.b-filestab .b-grid-cell i{
+  margin-inline-end:0.3em;
+}
+
+/*# sourceMappingURL=app.css.map */

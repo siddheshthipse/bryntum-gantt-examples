@@ -1,0 +1,14 @@
+{
+  ".b-groupbar .b-chip:last-child": {
+    "title": "Tree grouping",
+    "content": "Drag-drop a column header here to group the Gantt tree structure"
+  },
+  ".b-tree-parent-row": {
+    "title": "Read only",
+    "content": "All generated parents are read-only"
+  },
+  ".b-grid-row.b-linked[data-index=\"5\"]": {
+    "title": "Manually scheduled",
+    "content": "All tasks are flagged as being manually scheduled when grouping, to maintain correct dates"
+  }
+}

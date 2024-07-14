@@ -1,0 +1,17 @@
+.b-grid-row{
+  border:0;
+}
+
+.b-gantt-task-wrap{
+  padding-top:0.4em;
+}
+.b-gantt-task-wrap .b-gantt-task-content{
+  font-size:10px;
+  font-weight:normal;
+  text-align:end;
+}
+.b-gantt-task-wrap:not(.b-gantt-task-parent) .b-gantt-task, .b-gantt-task-wrap:not(.b-gantt-task-parent) .b-task-percent-bar{
+  border-radius:1em;
+}
+
+/*# sourceMappingURL=app.css.map */

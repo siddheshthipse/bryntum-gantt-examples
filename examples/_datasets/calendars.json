@@ -1,0 +1,758 @@
+{
+  "success" : true,
+  "project" : {
+    "calendar"     : "general",
+    "startDate"    : "2023-01-14",
+    "hoursPerDay"  : 24,
+    "daysPerWeek"  : 5,
+    "daysPerMonth" : 20
+  },
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ]
+      },
+      {
+        "id"                       : "weekends",
+        "name"                     : "Weekends",
+        "unspecifiedTimeIsWorking" : true,
+        "intervals"                : [
+          {
+            "recurrentStartDate" : "on Mon at 0:00",
+            "recurrentEndDate"   : "on Sat at 0:00",
+            "cls"                : "weekends",
+            "name"               : "Non-working",
+            "isWorking"          : false
+          }
+        ]
+      },
+      {
+        "id"        : "mon-wed",
+        "name"      : "Mon-Wed",
+        "intervals" : [
+          {
+            "cls"                : "mon-wed",
+            "recurrentStartDate" : "on Thu at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ]
+      },
+      {
+        "id"                       : "server",
+        "name"                     : "Servers (rebooted Sundays)",
+        "unspecifiedTimeIsWorking" : true,
+        "intervals"                : [
+          {
+            "recurrentStartDate" : "on Sun at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false,
+            "name"               : "Server reboot",
+            "cls"                : "reboot",
+            "iconCls"            : "b-fa b-fa-warning"
+          }
+        ]
+      }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"          : 1000,
+        "name"        : "Launch SaaS Product",
+        "percentDone" : 34,
+        "startDate"   : "2023-01-14",
+        "endDate"     : "2023-03-20",
+        "duration"    : 47,
+        "expanded"    : true,
+        "children"    : [
+          {
+            "id"          : 1,
+            "name"        : "Setup web server",
+            "percentDone" : 42.3,
+            "duration"    : 7,
+            "startDate"   : "2023-01-14",
+            "rollup"      : true,
+            "endDate"     : "2023-01-23",
+            "expanded"    : true,
+            "children"    : [
+              {
+                "id"          : 11,
+                "name"        : "Install Apache",
+                "percentDone" : 50,
+                "startDate"   : "2023-01-14",
+                "rollup"      : true,
+                "duration"    : 3,
+                "color"       : "teal",
+                "endDate"     : "2023-01-17",
+                "cost"        : 200,
+                "priority"    : "high",
+                "calendar"    : "mon-wed"
+              },
+              {
+                "id"             : 12,
+                "name"           : "Configure firewall",
+                "percentDone"    : 50,
+                "startDate"      : "2023-01-14",
+                "rollup"         : true,
+                "duration"       : 3,
+                "endDate"        : "2023-01-17",
+                "showInTimeline" : true,
+                "calendar"       : "weekends",
+                "priority"       : "high"
+              },
+              {
+                "id"          : 13,
+                "name"        : "Setup load balancer",
+                "percentDone" : 50,
+                "startDate"   : "2023-01-14",
+                "rollup"      : true,
+                "duration"    : 3,
+                "endDate"     : "2023-01-17",
+                "cost"        : 1200,
+                "calendar"    : "mon-wed",
+                "priority"    : "medium"
+              },
+              {
+                "id"          : 14,
+                "name"        : "Configure ports",
+                "percentDone" : 50,
+                "startDate"   : "2023-01-14",
+                "rollup"      : true,
+                "duration"    : 2,
+                "endDate"     : "2023-01-16",
+                "cost"        : 750,
+                "priority"    : "low"
+              },
+              {
+                "id"          : 15,
+                "name"        : "Run tests",
+                "percentDone" : 0,
+                "startDate"   : "2023-01-21",
+                "rollup"      : true,
+                "duration"    : 2,
+                "calendar"    : "server",
+                "endDate"     : "2023-01-23",
+                "cost"        : 5000,
+                "priority"    : "medium"
+              }
+            ]
+          },
+          {
+            "id"          : 2,
+            "name"        : "Website Design",
+            "percentDone" : 34,
+            "startDate"   : "2023-01-23",
+            "rollup"      : true,
+            "endDate"     : "2023-02-13",
+            "duration"    : 15,
+            "expanded"    : true,
+            "children"    : [
+              {
+                "id"          : 21,
+                "name"        : "Contact designers",
+                "percentDone" : 70,
+                "startDate"   : "2023-01-23",
+                "rollup"      : true,
+                "duration"    : 5,
+                "calendar"    : "mon-wed",
+                "endDate"     : "2023-01-30",
+                "cost"        : 500,
+                "priority"    : "low"
+              },
+              {
+                "id"          : 22,
+                "name"        : "Create shortlist of three designers",
+                "percentDone" : 60,
+                "startDate"   : "2023-01-30",
+                "rollup"      : true,
+                "duration"    : 1,
+                "endDate"     : "2023-01-31",
+                "calendar"    : "mon-wed",
+                "cost"        : 1000,
+                "priority"    : "medium"
+              },
+              {
+                "id"             : 23,
+                "name"           : "Select & review final design",
+                "percentDone"    : 50,
+                "startDate"      : "2023-01-31",
+                "rollup"         : true,
+                "duration"       : 2,
+                "showInTimeline" : true,
+                "calendar"       : "mon-wed",
+                "endDate"        : "2023-02-02",
+                "cost"           : 1000,
+                "priority"       : "high"
+              },
+              {
+                "id"          : 24,
+                "name"        : "Inform management about decision",
+                "percentDone" : 100,
+                "startDate"   : "2023-02-04",
+                "rollup"      : true,
+                "duration"    : 0,
+                "cost"        : 500,
+                "priority"    : "medium"
+              },
+              {
+                "id"          : 25,
+                "name"        : "Apply design to web site",
+                "percentDone" : 0,
+                "startDate"   : "2023-02-04",
+                "calendar"    : "mon-wed",
+                "rollup"      : true,
+                "duration"    : 7,
+                "endDate"     : "2023-02-13",
+                "cost"        : 11000,
+                "priority"    : "high"
+              }
+            ]
+          },
+          {
+            "id"          : 3,
+            "name"        : "Setup Test Strategy",
+            "percentDone" : 14.5,
+            "startDate"   : "2023-01-14",
+            "expanded"    : true,
+            "children"    : [
+              {
+                "id"          : 31,
+                "name"        : "Hire QA staff",
+                "percentDone" : 40,
+                "startDate"   : "2023-01-14",
+                "duration"    : 5,
+                "endDate"     : "2023-01-19",
+                "cost"        : 6000,
+                "priority"    : "medium"
+              },
+              {
+                "id"          : 33,
+                "name"        : "Write test specs",
+                "percentDone" : 9.6,
+                "duration"    : 10,
+                "startDate"   : "2023-01-21",
+                "expanded"    : true,
+                "priority"    : "low",
+                "children"    : [
+                  {
+                    "id"             : 331,
+                    "name"           : "Unit tests",
+                    "percentDone"    : 20,
+                    "startDate"      : "2023-01-21",
+                    "duration"       : 10,
+                    "endDate"        : "2023-02-02",
+                    "showInTimeline" : true,
+                    "cost"           : 7000,
+                    "priority"       : "high"
+                  },
+                  {
+                    "id"             : 332,
+                    "name"           : "UI unit tests / individual screens",
+                    "percentDone"    : 10,
+                    "startDate"      : "2023-01-21",
+                    "duration"       : 5,
+                    "endDate"        : "2023-01-26",
+                    "showInTimeline" : true,
+                    "cost"           : 5000,
+                    "priority"       : "medium"
+                  },
+                  {
+                    "id"          : 333,
+                    "name"        : "Application tests",
+                    "percentDone" : 0,
+                    "startDate"   : "2023-01-21",
+                    "duration"    : 10,
+                    "endDate"     : "2023-02-02",
+                    "cost"        : 2500,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 334,
+                    "name"        : "Automated Monkey tests",
+                    "percentDone" : 0,
+                    "startDate"   : "2023-01-21",
+                    "duration"    : 1,
+                    "calendar"    : "server",
+                    "endDate"     : "2023-01-22",
+                    "cost"        : 250,
+                    "priority"    : "low"
+                  }
+                ],
+                "endDate" : "2023-02-02"
+              }
+            ],
+            "endDate"  : "2023-02-02",
+            "duration" : 15
+          },
+          {
+            "id"          : 4,
+            "name"        : "Application Implementation",
+            "percentDone" : 39.3,
+            "startDate"   : "2023-02-04",
+            "duration"    : 32,
+            "expanded"    : true,
+            "children"    : [
+              {
+                "id"       : 400,
+                "name"     : "Phase #1",
+                "expanded" : true,
+                "duration" : 7,
+                "children" : [
+                  {
+                    "id"          : 41,
+                    "name"        : "Authentication module",
+                    "percentDone" : 100,
+                    "duration"    : 5,
+                    "startDate"   : "2023-02-04",
+                    "endDate"     : "2023-02-09",
+                    "cost"        : 8000,
+                    "priority"    : "high"
+                  },
+                  {
+                    "id"          : 42,
+                    "name"        : "Single sign on",
+                    "percentDone" : 100,
+                    "duration"    : 3,
+                    "startDate"   : "2023-02-04",
+                    "endDate"     : "2023-02-07",
+                    "cost"        : 4700,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 43,
+                    "name"        : "Implement role based access",
+                    "percentDone" : 0,
+                    "duration"    : 4,
+                    "startDate"   : "2023-02-04",
+                    "endDate"     : "2023-02-08",
+                    "cost"        : 5800,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"             : 44,
+                    "name"           : "Basic test coverage",
+                    "showInTimeline" : true,
+                    "cls"            : "important",
+                    "percentDone"    : 0,
+                    "duration"       : 3,
+                    "startDate"      : "2023-02-04",
+                    "endDate"        : "2023-02-07",
+                    "cost"           : 7000,
+                    "priority"       : "medium"
+                  },
+                  {
+                    "id"          : 45,
+                    "name"        : "Verify high test coverage",
+                    "percentDone" : 0,
+                    "duration"    : 2,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-02-13",
+                    "cost"        : 16000,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"             : 46,
+                    "name"           : "Make backup",
+                    "percentDone"    : 0,
+                    "duration"       : 0,
+                    "startDate"      : "2023-02-13",
+                    "endDate"        : "2023-02-13",
+                    "showInTimeline" : true,
+                    "rollup"         : true,
+                    "cost"           : 500,
+                    "priority"       : "high"
+                  }
+                ],
+                "percentDone" : 47,
+                "startDate"   : "2023-02-04",
+                "endDate"     : "2023-02-09"
+              },
+              {
+                "id"       : 401,
+                "name"     : "Phase #2",
+                "expanded" : true,
+                "duration" : 21,
+                "children" : [
+                  {
+                    "id"          : 4011,
+                    "name"        : "Authentication module",
+                    "percentDone" : 70,
+                    "duration"    : 15,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-03-02",
+                    "cost"        : 1200,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 4012,
+                    "name"        : "Single sign on",
+                    "percentDone" : 60,
+                    "duration"    : 5,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-02-16",
+                    "cost"        : 2500,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 4013,
+                    "name"        : "Implement role based access",
+                    "percentDone" : 50,
+                    "duration"    : 21,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-03-12",
+                    "cost"        : 4100,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 4014,
+                    "name"        : "Basic test coverage",
+                    "percentDone" : 0,
+                    "duration"    : 20,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-03-09",
+                    "cost"        : 1100,
+                    "priority"    : "medium"
+                  },
+                  {
+                    "id"          : 4015,
+                    "name"        : "Verify high test coverage",
+                    "percentDone" : 0,
+                    "duration"    : 4,
+                    "startDate"   : "2023-02-11",
+                    "endDate"     : "2023-02-15",
+                    "cost"        : 3000,
+                    "priority"    : "low"
+                  }
+                ],
+                "startDate"   : "2023-02-11",
+                "endDate"     : "2023-03-12",
+                "percentDone" : 36.9
+              },
+              {
+                "id"       : 402,
+                "name"     : "Acceptance phase",
+                "expanded" : true,
+                "children" : [
+                  {
+                    "id"          : 4031,
+                    "name"        : "Company bug bash",
+                    "percentDone" : 70,
+                    "duration"    : 3,
+                    "startDate"   : "2023-03-12",
+                    "endDate"     : "2023-03-15",
+                    "cost"        : 10000,
+                    "priority"    : "medium"
+                  },
+                  {
+                    "id"          : 4032,
+                    "name"        : "Test all web pages",
+                    "percentDone" : 60,
+                    "duration"    : 2,
+                    "startDate"   : "2023-03-12",
+                    "endDate"     : "2023-03-14",
+                    "cost"        : 5000,
+                    "priority"    : "medium"
+                  },
+                  {
+                    "id"          : 4033,
+                    "name"        : "Verify no broken links",
+                    "percentDone" : 50,
+                    "duration"    : 4,
+                    "startDate"   : "2023-03-12",
+                    "endDate"     : "2023-03-16",
+                    "cost"        : 1000,
+                    "priority"    : "low"
+                  },
+                  {
+                    "id"          : 4034,
+                    "name"        : "Make test release",
+                    "percentDone" : 0,
+                    "duration"    : 3,
+                    "startDate"   : "2023-03-12",
+                    "endDate"     : "2023-03-15",
+                    "cost"        : 1200,
+                    "priority"    : "medium"
+                  },
+                  {
+                    "id"          : 4035,
+                    "name"        : "Send invitation email",
+                    "percentDone" : 0,
+                    "duration"    : 0,
+                    "startDate"   : "2023-03-15",
+                    "endDate"     : "2023-03-16",
+                    "cost"        : 250,
+                    "priority"    : "medium"
+                  },
+                  {
+                    "id"          : 4036,
+                    "name"        : "Celebrate launch",
+                    "iconCls"     : "b-fa b-fa-glass-cheers",
+                    "percentDone" : 0,
+                    "duration"    : 1,
+                    "startDate"   : "2023-03-12",
+                    "endDate"     : "2023-03-13",
+                    "cost"        : 2500,
+                    "priority"    : "high"
+                  }
+                ],
+                "startDate"   : "2023-03-12",
+                "endDate"     : "2023-03-16",
+                "duration"    : 4,
+                "percentDone" : 40.8
+              }
+            ],
+            "endDate" : "2023-03-16"
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "fromTask" : 11,
+        "toTask"   : 15,
+        "lag"      : 2
+      },
+      {
+        "id"       : 2,
+        "fromTask" : 12,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 3,
+        "fromTask" : 13,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 4,
+        "fromTask" : 14,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 5,
+        "fromTask" : 15,
+        "toTask"   : 21
+      },
+      {
+        "id"       : 7,
+        "fromTask" : 21,
+        "toTask"   : 22
+      },
+      {
+        "id"       : 8,
+        "fromTask" : 22,
+        "toTask"   : 23
+      },
+      {
+        "id"       : 9,
+        "fromTask" : 23,
+        "toTask"   : 24
+      },
+      {
+        "id"       : 10,
+        "fromTask" : 24,
+        "toTask"   : 25
+      },
+      {
+        "id"       : 11,
+        "fromTask" : 31,
+        "toTask"   : 331
+      },
+      {
+        "id"       : 111,
+        "fromTask" : 31,
+        "toTask"   : 332
+      },
+      {
+        "id"       : 112,
+        "fromTask" : 31,
+        "toTask"   : 333
+      },
+      {
+        "id"       : 113,
+        "fromTask" : 31,
+        "toTask"   : 334
+      },
+      {
+        "id"       : 12,
+        "fromTask" : 400,
+        "toTask"   : 401
+      },
+      {
+        "id"       : 13,
+        "fromTask" : 401,
+        "toTask"   : 402
+      },
+      {
+        "id"       : 15,
+        "fromTask" : 3,
+        "toTask"   : 4
+      },
+      {
+        "id"       : 16,
+        "fromTask" : 41,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 17,
+        "fromTask" : 42,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 18,
+        "fromTask" : 43,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 19,
+        "fromTask" : 44,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 20,
+        "fromTask" : 4034,
+        "toTask"   : 4035
+      },
+      {
+        "id"       : 21,
+        "fromTask" : 4035,
+        "toTask"   : 4036
+      }
+    ]
+  },
+  "resources" : {
+    "rows" : [
+      {
+        "id"    : 1,
+        "name"  : "Celia",
+        "city"  : "Barcelona",
+        "image" : "celia.jpg"
+      },
+      {
+        "id"    : 2,
+        "name"  : "Lee",
+        "city"  : "London",
+        "image" : "lee.jpg"
+      },
+      {
+        "id"    : 3,
+        "name"  : "Macy",
+        "city"  : "New York",
+        "image" : "macy.jpg"
+      },
+      {
+        "id"       : 4,
+        "name"     : "Madison",
+        "city"     : "Barcelona",
+        "calendar" : "weekends",
+        "image"    : "madison.jpg"
+      },
+      {
+        "id"    : 5,
+        "name"  : "Rob",
+        "city"  : "Rome",
+        "image" : "rob.jpg"
+      },
+      {
+        "id"    : 6,
+        "name"  : "Dave",
+        "city"  : "Barcelona",
+        "image" : "dave.jpg"
+      },
+      {
+        "id"    : 7,
+        "name"  : "Dan",
+        "city"  : "London",
+        "image" : "dan.jpg"
+      },
+      {
+        "id"    : 8,
+        "name"  : "George",
+        "city"  : "New York",
+        "image" : "george.jpg"
+      },
+      {
+        "id"    : 9,
+        "name"  : "Gloria",
+        "city"  : "Rome",
+        "image" : "gloria.jpg"
+      },
+      {
+        "id"    : 10,
+        "name"  : "Henrik",
+        "city"  : "London",
+        "image" : "henrik.jpg"
+      }
+    ]
+  },
+  "assignments" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "event"    : 11,
+        "resource" : 1
+      },
+      {
+        "id"       : 2,
+        "event"    : 4033,
+        "resource" : 1
+      },
+      {
+        "id"       : 3,
+        "event"    : 12,
+        "resource" : 4
+      },
+      {
+        "id"       : 4,
+        "event"    : 13,
+        "resource" : 2
+      },
+      {
+        "id"       : 5,
+        "event"    : 13,
+        "resource" : 3
+      },
+      {
+        "id"       : 6,
+        "event"    : 13,
+        "resource" : 6
+      },
+      {
+        "id"       : 7,
+        "event"    : 13,
+        "resource" : 7
+      },
+      {
+        "id"       : 8,
+        "event"    : 13,
+        "resource" : 8
+      },
+      {
+        "id"       : 9,
+        "event"    : 21,
+        "resource" : 5
+      },
+      {
+        "id"       : 10,
+        "event"    : 21,
+        "resource" : 9
+      },
+      {
+        "id"       : 11,
+        "event"    : 22,
+        "resource" : 8
+      }
+    ]
+  }
+}

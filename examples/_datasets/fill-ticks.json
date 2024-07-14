@@ -1,0 +1,275 @@
+{
+  "success" : true,
+  "project" : {
+    "calendar"     : "business",
+    "startDate"    : "2022-01-10",
+    "hoursPerDay"  : 24,
+    "daysPerWeek"  : 5,
+    "daysPerMonth" : 20
+  },
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ],
+        "expanded" : true,
+        "children" : [
+          {
+            "id"        : "business",
+            "name"      : "Business",
+            "intervals" : [
+              {
+                "recurrentStartDate" : "every weekday at 12:00",
+                "recurrentEndDate"   : "every weekday at 13:00",
+                "isWorking"          : false
+              },
+              {
+                "recurrentStartDate" : "every weekday at 17:00",
+                "recurrentEndDate"   : "every weekday at 08:00",
+                "isWorking"          : false
+              }
+            ]
+          },
+          {
+            "id"        : "night",
+            "name"      : "Night shift",
+            "intervals" : [
+              {
+                "recurrentStartDate" : "every weekday at 6:00",
+                "recurrentEndDate"   : "every weekday at 22:00",
+                "isWorking"          : false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"           : 1000,
+        "name"         : "Launch SaaS Product",
+        "durationUnit" : "h",
+        "expanded"     : true,
+        "children"     : [
+          {
+            "id"           : 1,
+            "name"         : "Setup web server",
+            "durationUnit" : "h",
+            "expanded"     : true,
+            "children"     : [
+              {
+                "id"           : 11,
+                "name"         : "Install Apache",
+                "percentDone"  : 50,
+                "duration"     : 8,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 12,
+                "name"         : "Configure firewall",
+                "percentDone"  : 50,
+                "duration"     : 10,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 13,
+                "name"         : "Setup load balancer",
+                "percentDone"  : 50,
+                "duration"     : 8,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 14,
+                "name"         : "Configure ports",
+                "percentDone"  : 50,
+                "duration"     : 6,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 15,
+                "name"         : "Run tests",
+                "percentDone"  : 0,
+                "duration"     : 16,
+                "durationUnit" : "h"
+              }
+            ]
+          },
+          {
+            "id"           : 2,
+            "name"         : "Website Design",
+            "durationUnit" : "h",
+            "expanded"     : true,
+            "children"     : [
+              {
+                "id"           : 21,
+                "name"         : "Contact designers",
+                "percentDone"  : 70,
+                "duration"     : 12,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 22,
+                "name"         : "Create shortlist of three designers",
+                "percentDone"  : 60,
+                "duration"     : 8,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 23,
+                "name"         : "Select & review final design",
+                "percentDone"  : 50,
+                "duration"     : 16,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 24,
+                "name"         : "Inform management about decision",
+                "percentDone"  : 100,
+                "durationUnit" : "h",
+                "duration"     : 0
+              },
+              {
+                "id"           : 25,
+                "name"         : "Apply design to web site",
+                "percentDone"  : 0,
+                "duration"     : 18,
+                "durationUnit" : "h"
+              }
+            ]
+          },
+          {
+            "id"          : 3,
+            "name"        : "Setup Test Strategy",
+            "percentDone" : 14.5,
+            "expanded"    : true,
+            "children"    : [
+              {
+                "id"           : 31,
+                "name"         : "Hire QA staff",
+                "percentDone"  : 40,
+                "duration"     : 20,
+                "durationUnit" : "h"
+              },
+              {
+                "id"           : 33,
+                "name"         : "Write test specs",
+                "duration"     : 10,
+                "durationUnit" : "h",
+                "expanded"     : true,
+                "children"     : [
+                  {
+                    "id"           : 331,
+                    "name"         : "Unit tests",
+                    "percentDone"  : 20,
+                    "duration"     : 10,
+                    "durationUnit" : "h"
+                  },
+                  {
+                    "id"           : 332,
+                    "name"         : "UI unit tests / individual screens",
+                    "percentDone"  : 10,
+                    "duration"     : 20,
+                    "durationUnit" : "h"
+                  },
+                  {
+                    "id"           : 333,
+                    "name"         : "Application tests",
+                    "percentDone"  : 0,
+                    "duration"     : 20,
+                    "durationUnit" : "h"
+                  },
+                  {
+                    "id"           : 334,
+                    "name"         : "Monkey tests",
+                    "percentDone"  : 0,
+                    "duration"     : 10,
+                    "durationUnit" : "h"
+                  }
+                ]
+              }
+            ],
+            "durationUnit" : "h"
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "fromTask" : 11,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 2,
+        "fromTask" : 12,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 3,
+        "fromTask" : 13,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 4,
+        "fromTask" : 14,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 5,
+        "fromTask" : 15,
+        "toTask"   : 21
+      },
+      {
+        "id"       : 7,
+        "fromTask" : 21,
+        "toTask"   : 22
+      },
+      {
+        "id"       : 8,
+        "fromTask" : 22,
+        "toTask"   : 23
+      },
+      {
+        "id"       : 9,
+        "fromTask" : 23,
+        "toTask"   : 24
+      },
+      {
+        "id"       : 10,
+        "fromTask" : 24,
+        "toTask"   : 25
+      },
+      {
+        "id"       : 11,
+        "fromTask" : 31,
+        "toTask"   : 331
+      },
+      {
+        "id"       : 111,
+        "fromTask" : 31,
+        "toTask"   : 332
+      },
+      {
+        "id"       : 112,
+        "fromTask" : 31,
+        "toTask"   : 333
+      },
+      {
+        "id"       : 113,
+        "fromTask" : 31,
+        "toTask"   : 334
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  ".b-grid-header[data-column='inactive']": {
+    "title": "This column allows toggling tasks active/inactive state",
+    "content": "Use this column checkboxes to activate or deactivate any task",
+    "align": "r0-l0"
+  },
+  "[data-task-id='1'] .b-gantt-task": {
+    "title": "These tasks are inactive",
+    "content": "Such tasks do no take part in the scheduling process. They do not push their active successors nor do they affect the project finish date",
+    "align": "l0-r0"
+  }
+}

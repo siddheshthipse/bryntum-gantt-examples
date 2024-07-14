@@ -1,0 +1,4 @@
+{
+  "title": "Fill ticks demo",
+  "description": "Shows the fillTicks config, which stretches tasks to fill ticks and adjusts non working time ranges to also fit the ticks"
+}

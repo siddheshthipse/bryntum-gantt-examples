@@ -1,0 +1,6 @@
+{
+  ".b-tasknonworkingtime": {
+    "title": "Task non working time",
+    "content": "Unavailable time is highlighted based on the data you provide for your calendars"
+  }
+}

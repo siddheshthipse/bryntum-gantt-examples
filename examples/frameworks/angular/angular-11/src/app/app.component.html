@@ -1,0 +1,32 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<div class = "demo-toolbar align-right">
+    <bryntum-button
+        text = 'Change data'
+        cls = 'b-raised b-blue'
+        (onAction) = "onChangeData()"
+    ></bryntum-button>
+</div>
+
+<bryntum-gantt-project-model
+    #project
+    [calendar]     = "projectConfig.calendar!"
+    [startDate]    = "projectConfig.startDate!"
+    [hoursPerDay]  = "projectConfig.hoursPerDay!"
+    [daysPerMonth] = "projectConfig.daysPerMonth!"
+    [tasks]        = "tasks"
+    [timeRanges]   = "timeRanges"
+    [assignments]  = "assignments"
+    [resources]    = "resources"
+    [dependencies] = "dependencies"
+    [calendars]    = "calendars"
+></bryntum-gantt-project-model>
+<bryntum-gantt
+    [project]           = "project"
+    [columnLines]       = "ganttConfig.columnLines!"
+    [columns]           = "ganttConfig.columns!"
+    [subGridConfigs]    = "ganttConfig.subGridConfigs!"
+    [viewPreset]        = "ganttConfig.viewPreset!"
+    [timeRangesFeature] = "ganttConfig.features!.timeRanges!"
+></bryntum-gantt>

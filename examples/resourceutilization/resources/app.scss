@@ -1,0 +1,32 @@
+@import '../../../resources/sass/variables.scss';
+
+.utilization-toolbar {
+    justify-content : flex-end;
+    border-bottom   : solid 1px $widget-border-color;
+
+    .b-checkbox {
+        margin-inline-end : 1em;
+    }
+}
+
+.taskDateRange {
+    font-size : 0.8em;
+}
+
+.b-resourceutilization .b-resource-avatar {
+    width             : 2em;
+    height            : 2em;
+    margin-inline-end : 1em;
+}
+
+.projectIcon:before {
+    content : "\f802";
+}
+
+.b-buttongroup.group-buttons {
+    .b-button.b-pressed {
+        .b-fa-arrow-up, .b-fa-arrow-down {
+            color : #efbbbb;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Conflict Resolution Popup",
+  "description": "Shows the Gantt chart´s built-in conflict resolution popup in action. It is displayed after a cyclic structure, constraint violation to let the user decide what to do."
+}

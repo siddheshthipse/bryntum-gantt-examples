@@ -1,0 +1,456 @@
+{
+  "success" : true,
+  "project" : {
+    "calendar"     : "general",
+    "startDate"    : "2021-03-22",
+    "hoursPerDay"  : 24,
+    "daysPerWeek"  : 5,
+    "daysPerMonth" : 20
+  },
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ],
+        "children" : [
+          {
+            "id"        : "business",
+            "name"      : "Business",
+            "intervals" : [
+              {
+                "recurrentStartDate" : "every weekday at 12:00",
+                "recurrentEndDate"   : "every weekday at 13:00",
+                "isWorking"          : false
+              },
+              {
+                "recurrentStartDate" : "every weekday at 17:00",
+                "recurrentEndDate"   : "every weekday at 08:00",
+                "isWorking"          : false
+              }
+            ]
+          },
+          {
+            "id"        : "night",
+            "name"      : "Night shift",
+            "intervals" : [
+              {
+                "recurrentStartDate" : "every weekday at 6:00",
+                "recurrentEndDate"   : "every weekday at 22:00",
+                "isWorking"          : false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"          : 1,
+        "name"        : "Setup web server",
+        "percentDone" : 50,
+        "startDate"   : "2021-03-22",
+        "rollup"      : true,
+        "expanded"    : true,
+        "children"    : [
+          {
+            "id"          : 10,
+            "name"        : "Data center server setup",
+            "percentDone" : 20,
+            "startDate"   : "2021-03-22",
+            "rollup"      : true,
+            "duration"    : 5,
+            "hoursWorked" : [
+              2,
+              8,
+              9,
+              10,
+              6
+            ]
+          },
+          {
+            "id"          : 11,
+            "name"        : "Install Apache",
+            "percentDone" : 20,
+            "startDate"   : "2021-03-22",
+            "rollup"      : true,
+            "duration"    : 5,
+            "hoursWorked" : [
+              4,
+              6,
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "id"             : 12,
+            "name"           : "Configure firewall",
+            "percentDone"    : 80,
+            "startDate"      : "2021-03-29",
+            "rollup"         : true,
+            "duration"       : 5,
+            "showInTimeline" : true,
+            "hoursWorked"    : [
+              3,
+              4,
+              2,
+              8,
+              3
+            ]
+          },
+          {
+            "id"          : 13,
+            "name"        : "Setup load balancer",
+            "percentDone" : 30,
+            "startDate"   : "2021-04-05",
+            "rollup"      : true,
+            "duration"    : 5,
+            "hoursWorked" : [
+              3,
+              4,
+              2,
+              8,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id"          : 2,
+        "name"        : "Choose JavaScript Framework",
+        "percentDone" : 50,
+        "startDate"   : "2021-04-12",
+        "rollup"      : true,
+        "expanded"    : true,
+        "children"    : [
+          {
+            "id"          : 20,
+            "name"        : "Evaluate React",
+            "percentDone" : 40,
+            "startDate"   : "2021-04-12",
+            "rollup"      : true,
+            "duration"    : 4,
+            "hoursWorked" : [
+              2,
+              8,
+              9,
+              6
+            ]
+          },
+          {
+            "id"          : 21,
+            "name"        : "Evaluate Next.js",
+            "percentDone" : 20,
+            "startDate"   : "2021-04-16",
+            "rollup"      : true,
+            "duration"    : 4,
+            "hoursWorked" : [
+              4,
+              6,
+              4,
+              5
+            ]
+          },
+          {
+            "id"             : 22,
+            "name"           : "Evaluate Vue",
+            "percentDone"    : 80,
+            "startDate"      : "2021-04-22",
+            "rollup"         : true,
+            "duration"       : 4,
+            "showInTimeline" : true,
+            "hoursWorked"    : [
+              3,
+              2,
+              8,
+              3
+            ]
+          },
+          {
+            "id"             : 23,
+            "name"           : "Evaluate Svelte",
+            "percentDone"    : 80,
+            "startDate"      : "2021-04-28",
+            "rollup"         : true,
+            "duration"       : 4,
+            "showInTimeline" : true,
+            "hoursWorked"    : [
+              3,
+              2,
+              8,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "id"          : 3,
+        "name"        : "Choose Server Stack",
+        "percentDone" : 50,
+        "startDate"   : "2021-03-22",
+        "rollup"      : true,
+        "expanded"    : true,
+        "children"    : [
+          {
+            "id"          : 30,
+            "name"        : "Evaluate C#",
+            "percentDone" : 70,
+            "startDate"   : "2021-03-22",
+            "rollup"      : true,
+            "duration"    : 5,
+            "hoursWorked" : [
+              2,
+              3,
+              4,
+              6,
+              1
+            ]
+          },
+          {
+            "id"          : 31,
+            "name"        : "Evaluate Java",
+            "percentDone" : 20,
+            "startDate"   : "2021-03-22",
+            "rollup"      : true,
+            "duration"    : 5,
+            "hoursWorked" : [
+              4,
+              6,
+              6,
+              4,
+              5
+            ]
+          },
+          {
+            "id"             : 32,
+            "name"           : "Evaluate Python",
+            "percentDone"    : 80,
+            "startDate"      : "2021-03-29",
+            "rollup"         : true,
+            "duration"       : 5,
+            "showInTimeline" : true,
+            "hoursWorked"    : [
+              3,
+              2,
+              8,
+              5,
+              3
+            ]
+          },
+          {
+            "id"             : 33,
+            "name"           : "Evaluate Node",
+            "percentDone"    : 80,
+            "startDate"      : "2021-03-29",
+            "rollup"         : true,
+            "duration"       : 5,
+            "showInTimeline" : true,
+            "hoursWorked"    : [
+              3,
+              2,
+              10,
+              8,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resources" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "name"     : "Celia",
+        "city"     : "Barcelona",
+        "calendar" : null,
+        "image"    : "celia.jpg"
+      },
+      {
+        "id"       : 2,
+        "name"     : "Lee",
+        "city"     : "London",
+        "calendar" : null,
+        "image"    : "lee.jpg"
+      },
+      {
+        "id"       : 3,
+        "name"     : "Macy",
+        "city"     : "New York",
+        "calendar" : null,
+        "image"    : "macy.jpg"
+      },
+      {
+        "id"       : 4,
+        "name"     : "Madison",
+        "city"     : "Barcelona",
+        "calendar" : null,
+        "image"    : "madison.jpg"
+      },
+      {
+        "id"       : 5,
+        "name"     : "Rob",
+        "city"     : "Rome",
+        "calendar" : "business",
+        "image"    : "rob.jpg"
+      },
+      {
+        "id"       : 6,
+        "name"     : "Dave",
+        "city"     : "Barcelona",
+        "calendar" : "night",
+        "image"    : "dave.jpg"
+      },
+      {
+        "id"       : 7,
+        "name"     : "Dan",
+        "city"     : "London",
+        "calendar" : "night",
+        "image"    : "dan.jpg"
+      },
+      {
+        "id"       : 8,
+        "name"     : "George",
+        "city"     : "New York",
+        "calendar" : null,
+        "image"    : "george.jpg"
+      },
+      {
+        "id"       : 9,
+        "name"     : "Gloria",
+        "city"     : "Rome",
+        "calendar" : null,
+        "image"    : "gloria.jpg"
+      },
+      {
+        "id"       : 10,
+        "name"     : "Henrik",
+        "city"     : "London",
+        "calendar" : null,
+        "image"    : "henrik.jpg"
+      }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "fromTask" : 1,
+        "toTask"   : 2
+      },
+      {
+        "id"       : 2,
+        "fromTask" : 11,
+        "toTask"   : 12
+      },
+      {
+        "id"       : 3,
+        "fromTask" : 12,
+        "toTask"   : 13
+      },
+      {
+        "id"       : 4,
+        "fromTask" : 20,
+        "toTask"   : 21
+      },
+      {
+        "id"       : 5,
+        "fromTask" : 21,
+        "toTask"   : 22
+      },
+      {
+        "id"       : 6,
+        "fromTask" : 22,
+        "toTask"   : 23
+      },
+      {
+        "id"       : 7,
+        "fromTask" : 30,
+        "toTask"   : 31
+      },
+      {
+        "id"       : 8,
+        "fromTask" : 31,
+        "toTask"   : 32
+      },
+      {
+        "id"       : 9,
+        "fromTask" : 32,
+        "toTask"   : 33
+      }
+    ]
+  },
+  "assignments" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "event"    : 11,
+        "resource" : 1
+      },
+      {
+        "id"       : 2,
+        "event"    : 4033,
+        "resource" : 1
+      },
+      {
+        "id"       : 3,
+        "event"    : 12,
+        "resource" : 9
+      },
+      {
+        "id"       : 4,
+        "event"    : 13,
+        "resource" : 2
+      },
+      {
+        "id"       : 5,
+        "event"    : 13,
+        "resource" : 3
+      },
+      {
+        "id"       : 6,
+        "event"    : 13,
+        "resource" : 6
+      },
+      {
+        "id"       : 7,
+        "event"    : 13,
+        "resource" : 7
+      },
+      {
+        "id"       : 8,
+        "event"    : 13,
+        "resource" : 8
+      },
+      {
+        "id"       : 9,
+        "event"    : 21,
+        "resource" : 5
+      },
+      {
+        "id"       : 10,
+        "event"    : 21,
+        "resource" : 9
+      },
+      {
+        "id"       : 11,
+        "event"    : 22,
+        "resource" : 8
+      },
+      {
+        "id"       : 12,
+        "event"    : 25,
+        "resource" : 3
+      }
+    ]
+  }
+}

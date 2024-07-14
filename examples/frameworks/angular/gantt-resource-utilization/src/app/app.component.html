@@ -1,0 +1,34 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<bryntum-gantt-project-model
+    #project
+    [startDate]="projectModelConfig.startDate!"
+    [endDate]="projectModelConfig.endDate!"
+    [calendar]="projectModelConfig.calendar!"
+    [loadUrl]="projectModelConfig.loadUrl!"
+    [autoLoad]="projectModelConfig.autoLoad!"
+></bryntum-gantt-project-model>
+<bryntum-gantt
+    #gantt
+    [project]="project"
+    [resourceImageFolderPath]="ganttConfig.resourceImageFolderPath!"
+    [flex]="ganttConfig.flex!"
+    [labelsFeature]="ganttConfig.features!.labels!"
+    [viewPreset]="ganttConfig.viewPreset!"
+    [columnLines]="ganttConfig.columnLines!"
+    [columns]="ganttConfig.columns!"
+    [startDate]="ganttConfig.startDate!"
+    [subGridConfigs]="ganttConfig.subGridConfigs!"
+    (onBeforeCellEditStart)="onBeforeCellEditStart($event)"
+></bryntum-gantt>
+<bryntum-splitter></bryntum-splitter>
+<bryntum-resource-utilization
+    #resourceUtilization
+    [project]="project"
+    [flex]="resourceUtilizationConfig.flex!"
+    [rowHeight]="resourceUtilizationConfig.rowHeight!"
+    [showBarTip]="resourceUtilizationConfig.showBarTip!"
+    [columns]="resourceUtilizationConfig.columns!"
+    [bbar]="resourceUtilizationConfig.bbar!"
+></bryntum-resource-utilization>

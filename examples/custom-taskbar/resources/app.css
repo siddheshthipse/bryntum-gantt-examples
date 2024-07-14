@@ -1,0 +1,68 @@
+.b-gantt-task-parent .b-sch-label-top{
+  position:relative;
+  top:-0.25em;
+}
+.b-gantt-task-parent .b-sch-label-bottom{
+  margin-top:-0.75em;
+}
+
+.b-sch-color-none.b-gantt-task-wrap.b-gantt-task-parent:not(.b-milestone-wrap) .b-gantt-task{
+  min-height:1.8em;
+}
+
+.b-gantt-task-content{
+  display:flex;
+}
+.b-gantt-task-parent .b-gantt-task-content{
+  display:flex;
+  height:1.1em;
+  align-items:center;
+  align-self:flex-start;
+}
+
+.b-hour-editor{
+  box-shadow:none;
+  border:1px solid #aaa;
+}
+.b-hour-editor .b-field-inner{
+  border:0;
+}
+.b-hour-editor input{
+  text-align:center;
+}
+
+.b-sch-event-wrap .b-sch-label-bottom, .b-gantt-task-wrap .b-sch-label-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+  width:100%;
+  margin-top:0;
+}
+.b-sch-event-wrap .b-sch-label-bottom .b-day-hours, .b-gantt-task-wrap .b-sch-label-bottom .b-day-hours{
+  height:100%;
+  padding:0.25em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+  text-align:center;
+  font-weight:400;
+  font-size:0.75rem;
+}
+
+.b-gantt-task-wrap .b-sch-label-top{
+  overflow:hidden;
+  font-weight:400;
+  font-size:0.75rem;
+  padding:0.25em;
+}
+.b-gantt-task-wrap .b-sch-label-top i{
+  margin-inline:1em 0.5em;
+}
+
+.b-name{
+  font-size:0.8em;
+}
+
+/*# sourceMappingURL=app.css.map */

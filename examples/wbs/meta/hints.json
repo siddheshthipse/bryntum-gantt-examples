@@ -1,0 +1,12 @@
+{
+  ".b-checkbox[data-item-index=\"0\"]": {
+    "title": "Auto Update WBS",
+    "content": "Controls what actions refresh WBS values",
+    "align": "t-b"
+  },
+  ".b-checkbox[data-item-index=\"1\"]": {
+    "title": "Sort Tree",
+    "content": "Determines if the tree nodes are sorted",
+    "align": "l-r"
+  }
+}

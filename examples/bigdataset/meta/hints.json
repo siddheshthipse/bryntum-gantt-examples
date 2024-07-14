@@ -1,0 +1,12 @@
+{
+  "[data-ref=\"1kButton\"]": {
+    "title": "1000 tasks",
+    "content": "This scheduler initially displays 200 resources with 5 tasks each. Use the buttons to pick a larger dataset",
+    "maxWidth": 330
+  },
+  "[data-ref=customButton]": {
+    "title": "Custom settings",
+    "content": "Pick amount of resources & tasks, and which features (dependencies, time ranges etc.) to use yourself",
+    "align": "t0-b40"
+  }
+}

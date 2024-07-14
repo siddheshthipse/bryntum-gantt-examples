@@ -1,0 +1,349 @@
+{
+  "success"   : true,
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "8h5d",
+        "name"      : "8h / 5d calendar",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "every weekday at 12:00",
+            "recurrentEndDate"   : "every weekday at 13:00",
+            "isWorking"          : false
+          },
+          {
+            "recurrentStartDate" : "every weekday at 17:00",
+            "recurrentEndDate"   : "every weekday at 08:00",
+            "isWorking"          : false
+          }
+        ]
+      }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "name"     : "Picking process",
+        "expanded" : true,
+        "children" : [
+          {
+            "id"           : 4,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get order details",
+            "percentDone"  : 70
+          },
+          {
+            "id"           : 6,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get picking cart",
+            "percentDone"  : 50
+          },
+          {
+            "id"       : 5,
+            "name"     : "Pick order details",
+            "expanded" : true,
+            "children" : [
+              {
+                "id"           : 7,
+                "duration"     : 45,
+                "durationUnit" : "minute",
+                "name"         : "Cables",
+                "percentDone"  : 50
+              },
+              {
+                "id"           : 8,
+                "duration"     : 60,
+                "durationUnit" : "minute",
+                "name"         : "Transceivers",
+                "percentDone"  : 30
+              },
+              {
+                "id"           : 9,
+                "duration"     : 60,
+                "durationUnit" : "minute",
+                "name"         : "Distributors",
+                "percentDone"  : 60
+              },
+              {
+                "id"           : 10,
+                "duration"     : 90,
+                "durationUnit" : "minute",
+                "name"         : "Power supplying units",
+                "percentDone"  : 70
+              }
+            ]
+          },
+          {
+            "id"           : 11,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Leave at assembly queue",
+            "percentDone"  : 10
+          }
+        ]
+      },
+      {
+        "id"       : 12,
+        "name"     : "Assembly process",
+        "expanded" : true,
+        "children" : [
+          {
+            "id"           : 13,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get cabinet",
+            "percentDone"  : 80
+          },
+          {
+            "id"           : 14,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get picking cart with order details",
+            "percentDone"  : 70
+          },
+          {
+            "id"       : 22,
+            "name"     : "Mount order details",
+            "expanded" : true,
+            "children" : [
+              {
+                "id"           : 15,
+                "duration"     : 120,
+                "durationUnit" : "minute",
+                "name"         : "Mount transceivers",
+                "percentDone"  : 50
+              },
+              {
+                "id"           : 16,
+                "duration"     : 120,
+                "durationUnit" : "minute",
+                "name"         : "Mount distributors",
+                "percentDone"  : 20
+              },
+              {
+                "id"           : 17,
+                "duration"     : 180,
+                "durationUnit" : "minute",
+                "name"         : "Mount power supplying units",
+                "percentDone"  : 30
+              },
+              {
+                "id"           : 18,
+                "duration"     : 180,
+                "durationUnit" : "minute",
+                "name"         : "Connect all units",
+                "percentDone"  : 70
+              },
+              {
+                "id"           : 19,
+                "duration"     : 60,
+                "durationUnit" : "minute",
+                "name"         : "Tidy cable routing",
+                "percentDone"  : 90
+              }
+            ]
+          },
+          {
+            "id"           : 20,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Leave cabinet at test queue",
+            "percentDone"  : 70
+          }
+        ]
+      },
+      {
+        "id"       : 21,
+        "name"     : "Test process",
+        "expanded" : true,
+        "children" : [
+          {
+            "id"           : 23,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get cabinet",
+            "percentDone"  : 50
+          },
+          {
+            "id"           : 24,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Connect to test equipment",
+            "percentDone"  : 40
+          },
+          {
+            "id"           : 25,
+            "duration"     : 4,
+            "durationUnit" : "hour",
+            "name"         : "Run tests",
+            "percentDone"  : 10
+          },
+          {
+            "id"           : 26,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Leave cabinet at packing queue",
+            "percentDone"  : 20
+          }
+        ]
+      },
+      {
+        "id"       : 27,
+        "name"     : "Packing process",
+        "expanded" : true,
+        "children" : [
+          {
+            "id"           : 28,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Get cabinet",
+            "percentDone"  : 20
+          },
+          {
+            "id"           : 29,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Add desiccant bags",
+            "percentDone"  : 30
+          },
+          {
+            "id"           : 30,
+            "duration"     : 60,
+            "durationUnit" : "minute",
+            "name"         : "Add protective plastic wrappings",
+            "percentDone"  : 50
+          },
+          {
+            "id"           : 31,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Put on pallet",
+            "percentDone"  : 80
+          },
+          {
+            "id"           : 32,
+            "duration"     : 90,
+            "durationUnit" : "minute",
+            "name"         : "Put on wooden box casing",
+            "percentDone"  : 50
+          },
+          {
+            "id"           : 33,
+            "duration"     : 30,
+            "durationUnit" : "minute",
+            "name"         : "Add transport label",
+            "percentDone"  : 20
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"   : 11,
+        "from" : 4,
+        "to"   : 5
+      },
+      {
+        "id"   : 14,
+        "from" : 6,
+        "to"   : 5
+      },
+      {
+        "id"   : 17,
+        "from" : 5,
+        "to"   : 11
+      },
+      {
+        "id"   : 23,
+        "from" : 13,
+        "to"   : 22
+      },
+      {
+        "id"   : 26,
+        "from" : 14,
+        "to"   : 22
+      },
+      {
+        "id"   : 29,
+        "from" : 15,
+        "to"   : 18
+      },
+      {
+        "id"   : 32,
+        "from" : 16,
+        "to"   : 18,
+        "type" : 2
+      },
+      {
+        "id"   : 35,
+        "from" : 17,
+        "to"   : 18
+      },
+      {
+        "id"   : 38,
+        "from" : 18,
+        "to"   : 19
+      },
+      {
+        "id"   : 42,
+        "from" : 22,
+        "to"   : 20
+      },
+      {
+        "id"   : 47,
+        "from" : 23,
+        "to"   : 24
+      },
+      {
+        "id"   : 54,
+        "from" : 24,
+        "to"   : 25
+      },
+      {
+        "id"   : 59,
+        "from" : 25,
+        "to"   : 26
+      },
+      {
+        "id"   : 66,
+        "from" : 28,
+        "to"   : 29
+      },
+      {
+        "id"   : 71,
+        "from" : 28,
+        "to"   : 30
+      },
+      {
+        "id"   : 74,
+        "from" : 28,
+        "to"   : 31
+      },
+      {
+        "id"   : 84,
+        "from" : 29,
+        "to"   : 32
+      },
+      {
+        "id"   : 87,
+        "from" : 30,
+        "to"   : 32
+      },
+      {
+        "id"   : 92,
+        "from" : 31,
+        "to"   : 32
+      },
+      {
+        "id"   : 97,
+        "from" : 32,
+        "to"   : 33
+      }
+    ]
+  }
+}

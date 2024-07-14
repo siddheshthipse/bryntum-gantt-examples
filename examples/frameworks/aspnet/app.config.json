@@ -1,0 +1,7 @@
+{
+  "title": ".NET demo",
+  "description": "Shows Gantt with .NET backend",
+  "skipBuild": true,
+  "skipCache": true,
+  "package": "BryntumGanttCrudDemo/app/package.json"
+}

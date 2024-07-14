@@ -1,0 +1,14 @@
+{
+  ".demo-header": {
+    "title": "Demo header",
+    "content": "The title section of the demo"
+  },
+  ".b-sch-line": {
+    "title": "Timeline line",
+    "content": "Label for any date"
+  },
+  ".b-gantt-task": {
+    "title": "Gantt Task",
+    "content": "Any task in the gantt timeline"
+  }
+}

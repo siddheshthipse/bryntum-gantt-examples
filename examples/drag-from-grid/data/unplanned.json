@@ -1,0 +1,68 @@
+[
+  {
+    "id"       : 5001,
+    "name"     : "Install SSL certificate",
+    "duration" : 4,
+    "iconCls"  : "b-fa b-fa-fw b-fa-certificate"
+  },
+  {
+    "id"       : 5002,
+    "name"     : "Test backups",
+    "duration" : 8,
+    "iconCls"  : "b-fa b-fa-fw b-fa-sync"
+  },
+  {
+    "id"       : 5003,
+    "name"     : "Configure Admin account",
+    "duration" : 2,
+    "iconCls"  : "b-fa b-fa-fw b-fa-user-shield"
+  },
+  {
+    "id"       : 5004,
+    "name"     : "Setup load balancer",
+    "duration" : 2,
+    "iconCls"  : "b-fa b-fa-fw b-fa-server"
+  },
+  {
+    "id"       : 5005,
+    "name"     : "Change server ports",
+    "duration" : 2,
+    "iconCls"  : "b-fa b-fa-fw b-fa-server"
+  },
+  {
+    "id"       : 5006,
+    "name"     : "Load testing",
+    "duration" : 4,
+    "iconCls"  : "b-fa b-fa-fw b-fa-bolt"
+  },
+  {
+    "id"       : 5007,
+    "name"     : "Pen test",
+    "duration" : 1,
+    "iconCls"  : "b-fa b-fa-fw b-fa-award"
+  },
+  {
+    "id"       : 5008,
+    "name"     : "Code security analysis",
+    "duration" : 7,
+    "iconCls"  : "b-fa b-fa-fw b-fa-file-code"
+  },
+  {
+    "id"       : 5010,
+    "name"     : "Design login screen",
+    "duration" : 3,
+    "iconCls"  : "b-fa b-fa-fw b-fa-sign-in-alt"
+  },
+  {
+    "id"       : 5011,
+    "name"     : "UX review",
+    "duration" : 3,
+    "iconCls"  : "b-fa b-fa-fw b-fa-star"
+  },
+  {
+    "id"       : 5012,
+    "name"     : "Acceptance test",
+    "duration" : 2,
+    "iconCls"  : "b-fa b-fa-fw b-fa-certificate"
+  }
+]

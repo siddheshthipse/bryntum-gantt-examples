@@ -1,0 +1,37 @@
+.b-widget.b-timeline{
+  flex:none;
+  height:16em;
+}
+.b-widget.b-timeline.small{
+  height:14em;
+}
+.b-widget.b-timeline.small .b-grid-panel-body{
+  padding-top:2em;
+  padding-bottom:3em;
+}
+.b-widget.b-timeline.small .b-sch-event-content{
+  font-size:11px;
+}
+.b-widget.b-timeline.small label::before{
+  display:none;
+}
+.b-widget.b-timeline.large{
+  height:23em;
+}
+.b-widget.b-timeline.large .b-grid-panel-body{
+  padding-top:4em;
+  padding-bottom:6em;
+}
+
+.b-theme-stockholm .b-timeline{
+  border-bottom:1px solid #d8d9da;
+}
+.b-timeline .b-sch-event-wrap .important.b-sch-event:not(.b-milestone), .b-timeline .b-sch-event-wrap .important.b-gantt-task:not(.b-milestone), .b-timeline .b-sch-event-wrap .important.b-sch-event.b-milestone .b-sch-event-content::before, .b-timeline .b-sch-event-wrap .important.b-gantt-task.b-milestone .b-gantt-task-content,
+.b-gantt-task-wrap .important.b-sch-event:not(.b-milestone),
+.b-gantt-task-wrap .important.b-gantt-task:not(.b-milestone),
+.b-gantt-task-wrap .important.b-sch-event.b-milestone .b-sch-event-content::before,
+.b-gantt-task-wrap .important.b-gantt-task.b-milestone .b-gantt-task-content{
+  background-color:#F44336;
+}
+
+/*# sourceMappingURL=app.css.map */

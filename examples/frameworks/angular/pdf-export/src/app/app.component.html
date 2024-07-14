@@ -1,0 +1,17 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<div class = "demo-toolbar align-right">
+    <bryntum-button
+        cls = "b-skip-test b-deep-orange b-raised"
+        text = "Export to PDF/PNG"
+        (onClick) = "onPdfExport()"
+    ></bryntum-button>
+</div>
+
+<bryntum-gantt
+    #gantt
+    [columns] = "ganttConfig.columns"
+    [project] = "ganttConfig.project"
+    [pdfExportFeature] = "ganttConfig.features.pdfExport"
+></bryntum-gantt>

@@ -1,0 +1,12 @@
+label{
+  margin:0;
+}
+
+#customTaskMenu{
+  padding:0;
+}
+#customTaskMenu .dropdown-item{
+  padding:0.8em 1.2em;
+}
+
+/*# sourceMappingURL=app.css.map */

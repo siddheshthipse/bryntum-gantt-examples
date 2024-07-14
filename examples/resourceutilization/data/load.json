@@ -1,0 +1,558 @@
+{
+  "project" : {
+    "startDate"    : "2024-01-16",
+    "calendar"     : "general",
+    "daysPerWeek"  : 7,
+    "daysPerMonth" : 30,
+    "hoursPerDay"  : 24
+  },
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "fromTask" : 11,
+        "toTask"   : 17
+      },
+      {
+        "id"       : 2,
+        "fromTask" : 12,
+        "toTask"   : 17
+      },
+      {
+        "id"       : 3,
+        "fromTask" : 13,
+        "toTask"   : 17
+      },
+      {
+        "id"       : 4,
+        "fromTask" : 17,
+        "toTask"   : 34
+      },
+      {
+        "id"       : 10,
+        "fromTask" : 21,
+        "toTask"   : 5
+      },
+      {
+        "id"       : 12,
+        "fromTask" : 17,
+        "toTask"   : 16
+      },
+      {
+        "id"       : 13,
+        "fromTask" : 16,
+        "toTask"   : 20
+      },
+      {
+        "id"       : 14,
+        "fromTask" : 16,
+        "toTask"   : 19
+      },
+      {
+        "id"       : 15,
+        "fromTask" : 16,
+        "toTask"   : 18
+      },
+      {
+        "id"       : 16,
+        "fromTask" : 18,
+        "toTask"   : 21
+      },
+      {
+        "id"       : 21,
+        "fromTask" : 130,
+        "toTask"   : 170
+      },
+      {
+        "id"       : 22,
+        "fromTask" : 120,
+        "toTask"   : 170
+      },
+      {
+        "id"       : 23,
+        "fromTask" : 110,
+        "toTask"   : 170
+      },
+      {
+        "id"       : 24,
+        "fromTask" : 170,
+        "toTask"   : 40
+      },
+      {
+        "id"       : 25,
+        "fromTask" : 40,
+        "toTask"   : 50
+      },
+      {
+        "id"       : 26,
+        "fromTask" : 50,
+        "toTask"   : 60
+      },
+      {
+        "id"       : 27,
+        "fromTask" : 60,
+        "toTask"   : 100
+      },
+      {
+        "id"       : 28,
+        "fromTask" : 5,
+        "toTask"   : 50
+      }
+    ]
+  },
+  "assignments" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "event"    : 11,
+        "resource" : 1,
+        "units"    : 100
+      },
+      {
+        "id"       : 2,
+        "event"    : 11,
+        "resource" : 2,
+        "units"    : 80
+      },
+      {
+        "id"       : 3,
+        "event"    : 12,
+        "resource" : 1,
+        "units"    : 50
+      },
+      {
+        "id"       : 4,
+        "event"    : 12,
+        "resource" : 5,
+        "units"    : 50
+      },
+      {
+        "id"       : 5,
+        "event"    : 13,
+        "resource" : 6,
+        "units"    : 50
+      },
+      {
+        "id"       : 6,
+        "event"    : 13,
+        "resource" : 10,
+        "units"    : 50
+      },
+      {
+        "id"       : 7,
+        "event"    : 10,
+        "resource" : 10,
+        "units"    : 50
+      },
+      {
+        "id"       : 8,
+        "event"    : 250,
+        "resource" : 10,
+        "units"    : 100
+      },
+      {
+        "id"       : 9,
+        "event"    : 260,
+        "resource" : 4,
+        "units"    : 100
+      },
+      {
+        "id"       : 10,
+        "event"    : 260,
+        "resource" : 8,
+        "units"    : 100
+      },
+      {
+        "id"       : 12,
+        "event"    : 1002,
+        "resource" : 7,
+        "units"    : 100
+      },
+      {
+        "id"       : 13,
+        "event"    : 1002,
+        "resource" : 4,
+        "units"    : 100
+      },
+      {
+        "id"       : 14,
+        "event"    : 13,
+        "resource" : 1,
+        "units"    : 200
+      }
+    ]
+  },
+  "resources" : {
+    "rows" : [
+      { "id" : 1, "name" : "Celia's team", "city" : "Barcelona", "calendar" : null, "image" : "celia.jpg", "maxUnits" : 300 },
+      { "id" : 2, "name" : "Lee", "city" : "London", "calendar" : null, "image" : "lee.jpg" },
+      { "id" : 3, "name" : "Macy", "city" : "New York", "calendar" : null, "image" : "macy.jpg" },
+      { "id" : 4, "name" : "Madison", "city" : "Barcelona", "calendar" : null, "image" : "madison.jpg" },
+      { "id" : 5, "name" : "Rob", "city" : "Rome", "calendar" : "business", "image" : "rob.jpg" },
+      { "id" : 6, "name" : "Dave", "city" : "Barcelona", "calendar" : "night", "image" : "dave.jpg" },
+      { "id" : 7, "name" : "Dan", "city" : "London", "calendar" : "night", "image" : "dan.jpg" },
+      { "id" : 8, "name" : "George", "city" : "New York", "calendar" : null, "image" : "george.jpg" },
+      { "id" : 9, "name" : "Gloria", "city" : "Rome", "calendar" : null, "image" : "gloria.jpg" },
+      { "id" : 10, "name" : "Henrik", "city" : "London", "calendar" : null, "image" : "henrik.jpg" }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"             : 1000,
+        "startDate"      : "2024-01-16",
+        "name"           : "Project A",
+        "isProjectTask"  : true,
+        "note"           : "Project A description",
+        "percentDone"    : 48.627450980392155,
+        "duration"       : 20,
+        "iconCls"        : "b-icon projectIcon",
+        "expanded"       : true,
+        "constraintType" : "startnoearlierthan",
+        "constraintDate" : "2024-01-16",
+        "children"       : [
+          {
+            "id"          : 1,
+            "name"        : "Planning",
+            "percentDone" : 50,
+            "startDate"   : "2024-01-16",
+            "duration"    : 10,
+            "expanded"    : true,
+            "rollup"      : true,
+            "children"    : [
+              {
+                "id"          : 11,
+                "name"        : "Investigate",
+                "percentDone" : 50,
+                "cls"         : "LowPrio",
+                "startDate"   : "2024-01-16",
+                "duration"    : 8,
+                "segments"    : [
+                  {
+                    "id"        : 1,
+                    "startDate" : "2024-01-16",
+                    "duration"  : 1
+                  },
+                  {
+                    "id"        : 2,
+                    "startDate" : "2024-01-18",
+                    "duration"  : 2
+                  },
+                  {
+                    "id"        : 3,
+                    "startDate" : "2024-01-23",
+                    "duration"  : 5
+                  }
+                ]
+              },
+              {
+                "id"          : 12,
+                "name"        : "Assign resources",
+                "percentDone" : 50,
+                "startDate"   : "2024-01-16",
+                "duration"    : 10
+              },
+              {
+                "id"          : 13,
+                "name"        : "Gather documents",
+                "percentDone" : 50,
+                "startDate"   : "2024-01-16",
+                "cls"         : "important",
+                "duration"    : 10
+              },
+              {
+                "id"          : 17,
+                "name"        : "Report to management",
+                "percentDone" : 0,
+                "startDate"   : "2024-01-28",
+                "duration"    : 0
+              }
+            ]
+          },
+          {
+            "id"          : 4,
+            "cls"         : "LowPrio",
+            "name"        : "Implementation Phase",
+            "percentDone" : 46.95652173913044,
+            "startDate"   : "2024-01-30",
+            "duration"    : 10,
+            "expanded"    : true,
+            "rollup"      : true,
+            "children"    : [
+              {
+                "id"          : 34,
+                "name"        : "Preparation work",
+                "percentDone" : 30,
+                "startDate"   : "2024-01-30",
+                "duration"    : 5
+              },
+              {
+                "id"          : 16,
+                "name"        : "Choose technology suite",
+                "percentDone" : 30,
+                "startDate"   : "2024-01-30",
+                "duration"    : 5,
+                "rollup"      : true
+              },
+              {
+                "id"          : 15,
+                "name"        : "Build prototype",
+                "percentDone" : 60,
+                "startDate"   : "2024-02-06",
+                "duration"    : 5,
+                "expanded"    : false,
+                "children"    : [
+                  {
+                    "id"          : 20,
+                    "name"        : "Step 1",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-06",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"          : 19,
+                    "name"        : "Step 2",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-06",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"          : 18,
+                    "name"        : "Step 3",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-06",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"          : 21,
+                    "name"        : "Follow up with customer",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-10",
+                    "duration"    : 1,
+                    "rollup"      : true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id"          : 5,
+            "name"        : "Customer approval",
+            "percentDone" : 0,
+            "startDate"   : "2024-02-11",
+            "duration"    : 0,
+            "cls"         : "CustomerApproval",
+            "rollup"      : true
+          }
+        ]
+      },
+      {
+        "id"             : 1001,
+        "startDate"      : "2024-01-23",
+        "name"           : "Project B",
+        "isProjectTask"  : true,
+        "note"           : "Project B description goes here",
+        "percentDone"    : 37.4025974025974,
+        "duration"       : 25,
+        "expanded"       : true,
+        "constraintType" : "startnoearlierthan",
+        "constraintDate" : "2024-01-23",
+        "iconCls"        : "b-icon projectIcon",
+        "children"       : [
+          {
+            "id"          : 10,
+            "name"        : "Planning",
+            "percentDone" : 50,
+            "startDate"   : "2024-01-23",
+            "duration"    : 10,
+            "expanded"    : true,
+            "rollup"      : true,
+            "children"    : [
+              {
+                "id"          : 110,
+                "name"        : "Investigate",
+                "percentDone" : 50,
+                "cls"         : "LowPrio",
+                "startDate"   : "2024-01-23",
+                "duration"    : 5
+              },
+              {
+                "id"          : 120,
+                "name"        : "Assign resources",
+                "percentDone" : 50,
+                "startDate"   : "2024-01-23",
+                "duration"    : 10
+              },
+              {
+                "id"          : 130,
+                "name"        : "Gather documents",
+                "percentDone" : 50,
+                "startDate"   : "2024-01-23",
+                "duration"    : 10
+              },
+              {
+                "id"          : 170,
+                "name"        : "Report to management",
+                "percentDone" : 0,
+                "startDate"   : "2024-02-04",
+                "duration"    : 0
+              }
+            ]
+          },
+          {
+            "id"          : 40,
+            "cls"         : "LowPrio",
+            "name"        : "Implementation Phase 1",
+            "percentDone" : 43.92857142857143,
+            "startDate"   : "2024-02-06",
+            "duration"    : 6,
+            "expanded"    : false,
+            "rollup"      : true,
+            "children"    : [
+              {
+                "id"          : 340,
+                "name"        : "Preparation work",
+                "percentDone" : 30,
+                "startDate"   : "2024-02-06",
+                "duration"    : 5
+              },
+              {
+                "id"          : 140,
+                "name"        : "Evaluate chipsets",
+                "percentDone" : 30,
+                "startDate"   : "2024-02-06",
+                "duration"    : 5
+              },
+              {
+                "id"          : 160,
+                "name"        : "Choose technology suite",
+                "percentDone" : 30,
+                "startDate"   : "2024-02-06",
+                "duration"    : 5,
+                "rollup"      : true
+              },
+              {
+                "id"             : 150,
+                "name"           : "Build prototype",
+                "percentDone"    : 60,
+                "startDate"      : "2024-02-07",
+                "ConstraintType" : "startnoearlierthan",
+                "ConstraintDate" : "2024-02-07",
+                "duration"       : 5,
+                "expanded"       : true,
+                "children"       : [
+                  {
+                    "id"          : 200,
+                    "name"        : "Step 1",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-07",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"          : 190,
+                    "name"        : "Step 2",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-07",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"          : 180,
+                    "name"        : "Step 3",
+                    "percentDone" : 60,
+                    "startDate"   : "2024-02-07",
+                    "duration"    : 4
+                  },
+                  {
+                    "id"             : 210,
+                    "name"           : "Follow up with customer",
+                    "percentDone"    : 60,
+                    "startDate"      : "2024-02-13",
+                    "ConstraintType" : "startnoearlierthan",
+                    "ConstraintDate" : "2024-02-13",
+                    "duration"       : 1,
+                    "rollup"         : true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id"          : 50,
+            "name"        : "Customer approval",
+            "percentDone" : 0,
+            "startDate"   : "2024-02-14",
+            "duration"    : 0,
+            "cls"         : "CustomerApproval",
+            "rollup"      : true
+          },
+          {
+            "id"             : 60,
+            "name"           : "Implementation Phase 2",
+            "percentDone"    : 16.666666666666668,
+            "startDate"      : "2024-02-15",
+            "duration"       : 8,
+            "expanded"       : true,
+            "cls"            : "Important",
+            "ConstraintType" : "startnoearlierthan",
+            "ConstraintDate" : "2024-02-15",
+            "children"       : [
+              {
+                "id"          : 250,
+                "name"        : "Task 1",
+                "percentDone" : 10,
+                "startDate"   : "2024-02-15",
+                "duration"    : 8
+              },
+              {
+                "id"          : 260,
+                "name"        : "Task 2",
+                "percentDone" : 20,
+                "startDate"   : "2024-02-15",
+                "duration"    : 8
+              },
+              {
+                "id"          : 270,
+                "name"        : "Task 3",
+                "percentDone" : 20,
+                "startDate"   : "2024-02-15",
+                "duration"    : 8,
+                "rollup"      : true
+              }
+            ]
+          },
+          {
+            "id"          : 100,
+            "name"        : "Customer approval 2",
+            "percentDone" : 0,
+            "startDate"   : "2024-02-25",
+            "rollup"      : true,
+            "duration"    : 0
+          }
+        ]
+      },
+      {
+        "id"          : 1002,
+        "name"        : "Some standalone task",
+        "percentDone" : 0,
+        "startDate"   : "2024-01-16",
+        "rollup"      : true,
+        "duration"    : 5
+      }
+    ]
+  }
+}

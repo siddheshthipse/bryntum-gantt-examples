@@ -1,0 +1,21 @@
+.b-prio {
+    display             : flex;
+    align-items         : center;
+    justify-content     : center;
+    border-radius       : 1em;
+    padding             : 0.3em 1em;
+    color               : #fff;
+    margin-inline-start : 0.5em;
+}
+
+.b-prio-1 {
+    background-color : #f44336;
+}
+
+.b-prio-2 {
+    background-color : #ff9800;
+}
+
+.b-prio-3 {
+    background-color : #e040fb;
+}

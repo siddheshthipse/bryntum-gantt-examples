@@ -1,0 +1,7 @@
+{
+  "[data-index='1'] .b-grid-cell": {
+    "title": "Fixed columns",
+    "content": "Keep important information always visible by defining a fixed SubGrid",
+    "align": "l0-r0"
+  }
+}

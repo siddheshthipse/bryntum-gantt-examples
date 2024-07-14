@@ -1,0 +1,13 @@
+.b-sch-highlighted-range {
+    &:not(.b-task-boundary) {
+        align-items : flex-start;
+
+        .b-sch-highlighted-range-name {
+            margin-top : 5em;
+        }
+    }
+
+    .b-sch-highlighted-range-name {
+        font-size   : 0.7em;
+    }
+}

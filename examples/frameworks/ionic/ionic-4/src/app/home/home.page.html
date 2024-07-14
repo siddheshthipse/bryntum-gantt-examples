@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+        <bryntum-demo-header></bryntum-demo-header>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <bryntum-gantt
+        #gantt
+        minHeight = "auto"
+        [columns] = "ganttConfig.columns"
+        [project] = "ganttConfig.project"
+    ></bryntum-gantt>
+</ion-content>

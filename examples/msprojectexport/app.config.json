@@ -1,0 +1,4 @@
+{
+  "title": "Export Gantt to Microsoft Project",
+  "description": "This demo shows a custom solution of exporting Gantt data to Microsoft Project without involving the server"
+}

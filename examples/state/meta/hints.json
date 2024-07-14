@@ -1,0 +1,15 @@
+{
+  ".b-schedulerheader": {
+    "title": "Make changes to the columns",
+    "content": "Resize, reorder or hide certain columns, change zoom level, etc. Gantt will look same after reload"
+  },
+  "[data-ref=autoSaveCheckbox]": {
+    "title": "Save state automatically",
+    "content": "Changes are stored automatically and applied immediately after reload. Uncheck to stop syncing state changes"
+  },
+  "[data-ref=resetButton]": {
+    "title": "Reset app state",
+    "content": "Discard user changes to app default",
+    "align": "l-r"
+  }
+}

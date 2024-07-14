@@ -1,0 +1,26 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<div class="b-wrapper b-widget">
+    <bryntum-gantt
+        #gantt
+        [project]="ganttConfig.project"
+        [flex]="ganttConfig.flex"
+        [dependencyIdField]="ganttConfig.dependencyIdField"
+        [columns]="ganttConfig.columns"
+        [subGridConfigs]="ganttConfig.subGridConfigs"
+        [tbar]="ganttConfig.tbar"
+        [loadMask]="ganttConfig.loadMask"
+        [enableUndoRedoKeys]="ganttConfig.enableUndoRedoKeys"
+    ></bryntum-gantt>
+    <bryntum-splitter></bryntum-splitter>
+    <bryntum-tree-grid
+        #treeGrid
+        [flex]="treeGridConfig.flex"
+        [tbar]="treeGridConfig.tbar"
+        [readOnly]="treeGridConfig.readOnly"
+        [cellEditFeature]="treeGridConfig.features.cellEdit"
+        [store]="treeGridConfig.store"
+        [columns]="treeGridConfig.columns"
+    ></bryntum-tree-grid>
+</div>

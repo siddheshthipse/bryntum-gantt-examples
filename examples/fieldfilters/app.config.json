@@ -1,0 +1,4 @@
+{
+  "title": "Advanced filtering demo",
+  "description": "Shows how to use FieldFilterPickerGroup for advanced filtering of a Gantt chart, synchronized with the Gantt Filter feature."
+}

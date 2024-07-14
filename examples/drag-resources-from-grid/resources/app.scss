@@ -1,0 +1,82 @@
+#container > .b-container {
+    flex-flow : row;
+}
+
+.b-grid-header {
+    height : 57px;
+}
+
+.b-resource-avatar {
+    .b-resourcegrid .b-grid-cell & {
+        margin-inline-end : 0.6em;
+    }
+
+    &.b-dragging {
+        position      : absolute;
+        background    : #ccc;
+
+        &:not(.b-drag-final-transition) {
+            width   : 3em;
+            height  : 3em;
+            padding : 2px;
+        }
+
+        background    : #fff;
+        box-shadow    : 0 3px 6px #dddddd55;
+        display       : flex;
+        border-radius : 50%;
+        opacity       : 1;
+    }
+
+    // Set up the
+    &.b-drag-final-transition,
+    &.b-aborting {
+        transition          : transform, height, width, padding;
+        transition-duration : .6s;
+    }
+
+    &.b-drag-invalid {
+        background : #D50000;
+    }
+}
+
+.b-resourcegrid {
+    .b-grid-cell {
+        cursor : pointer;
+    }
+}
+
+.b-tree-icon {
+    display : none;
+}
+
+.b-icon-tree-leaf {
+    visibility : hidden;
+}
+
+.b-dragging-resource .b-grid-row:hover {
+    background : #dddddd33;
+}
+
+.b-resource-avatar-tooltip .b-popup-content {
+    align-items : center;
+
+    [data-name=units] {
+        font-weight : 600;
+        min-width   : 1.7em;
+    }
+
+    .b-button {
+        font-size     : .8em;
+        width         : 2em;
+        height        : 2em;
+        border-radius : 50%;
+        min-width     : 0;
+        min-height    : 0;
+
+        &:first-of-type {
+            margin-inline-start : 3em;
+        }
+    }
+}
+

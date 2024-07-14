@@ -1,0 +1,4 @@
+{
+  "title": "Drag resources from utilization onto tasks",
+  "description": "This example shows you can assign tasks to resources by dragging a resource from the utilization grid onto tasks in the Gantt chart."
+}

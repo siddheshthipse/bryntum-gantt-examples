@@ -1,0 +1,115 @@
+.b-timeranges-body-canvas .b-sch-range.audit {
+    background : #98c1ff;
+    opacity    : 0.3;
+}
+
+.b-theme-stockholm {
+    .b-sidebar {
+        border-color : #e5e5e8;
+
+        .b-list {
+            background : transparent;
+        }
+
+        .b-list-item {
+            border     : none;
+            background : #fff;
+
+            &.b-selected .b-selected-icon {
+                background-color : #0276f8;
+                color            : #fff;
+            }
+        }
+
+        .b-panel-header.b-dock-top {
+            background : transparent;
+            border     : none;
+        }
+    }
+}
+
+.b-sidebar {
+    border-inline-start : 2px solid;
+
+    .b-list {
+        height : 100%;
+    }
+
+    .b-list-item {
+        cursor     : pointer;
+        padding    : 0.8em 0.4em 0.8em 0.8em;
+        margin-top : .5em;
+
+        .b-selected-icon {
+            height            : 1em;
+            width             : 1em;
+            display           : flex !important;
+            align-items       : center;
+            justify-content   : center;
+            border-radius     : 5px;
+            visibility        : visible !important;
+            border            : 2px solid #0276f8;
+            padding           : 0.65em;
+            margin-inline-end : .8em;
+            font-size         : .8em;
+        }
+
+        &:not(.b-selected) .b-selected-icon:before {
+            visibility : hidden;
+        }
+
+        &:hover {
+            font-weight : 500;
+        }
+
+        .b-fa:hover {
+            filter : brightness(1.75);
+        }
+
+        .b-fa-chevron-up,
+        .b-fa-chevron-down {
+            padding : 0 .5em;
+        }
+
+        .b-fa-chevron-up {
+            margin-inline-start : auto;
+        }
+    }
+}
+
+.b-highlight {
+    &.b-grid-row,
+    &:not(.b-grid-row) > * {
+        filter : drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
+    }
+}
+
+.b-sch-canvas,
+.b-timeranges-canvas,
+.b-grid-row {
+    transition : opacity .3s;
+
+    &.b-disabled {
+        opacity : 0;
+    }
+}
+
+.b-theme-classic-dark {
+    .b-sidebar {
+        border-color : #2b2b2f;
+
+        .b-list {
+            background : transparent;
+        }
+
+        .b-list-item {
+            background : #44444a !important;
+        }
+    }
+}
+
+.b-theme-material {
+    .b-sidebar {
+        border-color : #2196f3;
+    }
+}

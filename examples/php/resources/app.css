@@ -1,0 +1,75 @@
+.b-floating.b-toast.php-demo-error-message{
+  background-color:#e53f2c;
+  color:#fff;
+}
+
+.b-gantt > .b-toolbar{
+  border-bottom:1px solid;
+}
+.b-gantt > .b-toolbar > .b-content-element > .b-widget{
+  margin-inline-end:1em;
+}
+.b-gantt > .b-toolbar > .b-content-element .b-button{
+  min-width:3.5em;
+}
+
+.filter-by-name label{
+  display:none;
+}
+
+.b-theme-stockholm .b-gantt > .b-toolbar{
+  border-bottom-color:#d8d9da;
+}
+
+.b-theme-classic .b-gantt > .b-toolbar{
+  background-color:#f1f1f4;
+  border-bottom-color:#b0b0b6;
+}
+.b-theme-classic .b-gantt > .b-toolbar .b-has-label label{
+  color:#555;
+}
+
+.b-theme-classic-light .b-gantt > .b-toolbar{
+  background-color:#fff;
+  border-bottom-color:#e0e0e0;
+}
+
+.b-theme-material .b-gantt > .b-toolbar{
+  background-color:#fff;
+  border-bottom:none;
+}
+.b-theme-material .b-gantt > .b-toolbar .filter-by-name label{
+  display:block;
+}
+
+.b-theme-classic-dark .b-gantt > .b-toolbar{
+  background-color:#2b2b2f;
+  border-bottom-color:#2a2b2e;
+}
+
+.b-status-column-cell{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:0.7em 1em;
+  font-size:0.8em;
+  color:#fff;
+}
+
+.b-status-column-cell i{
+  margin-inline-end:0.5em;
+}
+
+.Started{
+  color:#bbb;
+}
+
+.Late{
+  color:#ff5722;
+}
+
+.Completed{
+  color:#34d844;
+}
+
+/*# sourceMappingURL=app.css.map */

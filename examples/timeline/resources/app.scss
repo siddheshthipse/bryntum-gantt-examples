@@ -1,0 +1,48 @@
+.b-widget.b-timeline {
+    flex   : none;
+    height : 16em;
+
+    &.small {
+        height : 14em;
+
+        .b-grid-panel-body {
+            padding-top    : 2em;
+            padding-bottom : 3em;
+        }
+
+        .b-sch-event-content {
+            font-size : 11px;
+        }
+
+        label::before {
+            display : none;
+        }
+    }
+
+    &.large {
+        height : 23em;
+
+        .b-grid-panel-body {
+            padding-top    : 4em;
+            padding-bottom : 6em;
+        }
+    }
+}
+
+.b-theme-stockholm .b-timeline {
+    border-bottom : 1px solid #d8d9da;
+}
+
+/* Color "important" tasks / events red */
+.b-timeline .b-sch-event-wrap,
+.b-gantt-task-wrap {
+    .important {
+        &.b-sch-event:not(.b-milestone),
+        &.b-gantt-task:not(.b-milestone),
+        /* Target different part of milestones with the color */
+        &.b-sch-event.b-milestone .b-sch-event-content::before,
+        &.b-gantt-task.b-milestone .b-gantt-task-content {
+            background-color : #F44336;
+        }
+    }
+}

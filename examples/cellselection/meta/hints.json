@@ -1,0 +1,15 @@
+{
+  "[data-index='0'] .b-rownumber-cell": {
+    "title": "Row number selection",
+    "content": "Use the RowNumber column to select whole rows",
+    "align": "l0-r0"
+  },
+  "[data-index='5'] [data-column='name']": {
+    "title": "Auto edit multiple cells",
+    "content": "Select a range of cells by shift-clicking or drag-selecting. Then start typing and hit Ctrl/Cmd+Enter to edit a range of cells simultaneously."
+  },
+  "[data-index='4'] [data-column='assignments']": {
+    "title": "Cell copy paste and the Fill handle feature",
+    "content": "Select one or a range of cells, copy (Ctrl/Cmd+C) and paste (Ctrl/Cmd+V) somewhere else. Or use the fill handle icon in the bottom right corner to fill a new range with the selected value(s)."
+  }
+}

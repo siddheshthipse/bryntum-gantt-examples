@@ -1,0 +1,19 @@
+.b-grid-row {
+    border : 0;
+}
+
+.b-gantt-task-wrap {
+    padding-top: 0.4em;
+
+    .b-gantt-task-content {
+        font-size   : 10px;
+        font-weight : normal;
+        text-align  : end;
+    }
+
+    &:not(.b-gantt-task-parent) {
+        .b-gantt-task, .b-task-percent-bar {
+            border-radius : 1em;
+        }
+    }
+}

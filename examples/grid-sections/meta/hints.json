@@ -1,0 +1,6 @@
+{
+  ".b-grid-splitter.b-right-only": {
+    "title": "Extra grid section",
+    "content": "An extra grid set of column is shown to the right of the timeline. Drag the splitter to resize the section."
+  }
+}

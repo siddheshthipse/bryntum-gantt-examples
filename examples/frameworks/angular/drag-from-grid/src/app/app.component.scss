@@ -1,0 +1,37 @@
+/**
+ * App component styles
+ */
+@import "@bryntum/gantt/gantt.material.css";
+@import "@bryntum/demo-resources/scss/example.scss";
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+
+.unplanned-icon {
+    margin-inline-end: 0.5em;
+}
+
+.b-grid-header {
+    height: 57px;
+}
+
+.b-grid-row.b-drag-proxy {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    min-width: 0 !important;
+}
+.b-grid-row.b-drag-proxy.b-drag-invalid {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.drag-from-grid-target-task-before {
+    border-top: 2px solid #e64a19;
+    top: -1px;
+}
+
+.b-timeaxissubgrid .b-grid-row {
+    border-color: transparent;
+}

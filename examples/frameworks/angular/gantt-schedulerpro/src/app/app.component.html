@@ -1,0 +1,29 @@
+<!-- BryntumDemoHeader component is used for Bryntum example styling only and can be removed -->
+<bryntum-demo-header></bryntum-demo-header>
+
+<bryntum-gantt
+    #gantt
+    [project] = "project"
+    [resourceImageFolderPath] = "ganttConfig.resourceImageFolderPath!"
+    [flex] = "ganttConfig.flex!"
+    [labelsFeature] = "ganttConfig.features!.labels!"
+    [viewPreset] = "ganttConfig.viewPreset!"
+    [columnLines] = "ganttConfig.columnLines!"
+    [columns] = "ganttConfig.columns!"
+    [startDate] = "ganttConfig.startDate!"
+    [listeners] = "ganttConfig.listeners!"
+    [subGridConfigs] = "ganttConfig.subGridConfigs!"
+></bryntum-gantt>
+<bryntum-splitter></bryntum-splitter>
+<bryntum-scheduler-pro
+    #schedulerpro
+    [project] = "project"
+    [flex] = "schedulerProConfig.flex!"
+    [rowHeight] = "schedulerProConfig.rowHeight!"
+    [eventColor] = "schedulerProConfig.eventColor!"
+    [useInitialAnimation] = "schedulerProConfig.useInitialAnimation!"
+    [resourceImagePath] = "schedulerProConfig.resourceImagePath!"
+    [dependenciesFeature] = "schedulerProConfig.features!.dependencies!"
+    [percentBarFeature] = "schedulerProConfig.features!.percentBar!"
+    [columns] = "schedulerProConfig.columns!"
+></bryntum-scheduler-pro>

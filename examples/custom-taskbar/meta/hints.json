@@ -1,0 +1,6 @@
+{
+  "[data-task-id='10'] .b-day-hours": {
+    "title": "Editable hour cells",
+    "content": "Using the <code>labels</code> feature you can output any HTML you want around the task bar element. Try editing the value of leaf task hour cells!"
+  }
+}

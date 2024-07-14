@@ -1,0 +1,64 @@
+{
+  "project" : {
+    "calendar"  : "general",
+    "startDate" : "2023-04-17"
+  },
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ]
+      }
+    ]
+  },
+  "resources" : {
+    "rows" : [
+      { "id" : 1, "name" : "Alice", "role" : "Developer" },
+      { "id" : 2, "name" : "Bob", "role" : "PM" },
+      { "id" : 3, "name" : "Charlie", "role" : "Analyst" },
+      { "id" : 4, "name" : "David", "role" : "UI/UX Designer" },
+      { "id" : 5, "name" : "Eve", "role" : "QA Engineer" }
+    ]
+  },
+  "tasks" : {
+    "rows" : [
+      {
+        "id"       : 100,
+        "name"     : "Project",
+        "expanded" : true,
+        "children" : [
+          { "id" : 1, "duration" : 5, "name" : "Kickoff" },
+          { "id" : 2, "duration" : 5, "name" : "Requirements" },
+          { "id" : 3, "duration" : 7, "name" : "Data Analysis" },
+          { "id" : 4, "duration" : 8, "name" : "UI/UX Review" },
+          { "id" : 5, "duration" : 6, "name" : "QA Testing" }
+        ]
+      }
+    ]
+  },
+  "assignments" : {
+    "rows" : [
+      { "id" : 1, "resourceId" : 1, "eventId" : 1 },
+      { "id" : 2, "resourceId" : 2, "eventId" : 2 },
+      { "id" : 3, "resourceId" : 3, "eventId" : 3 },
+      { "id" : 4, "resourceId" : 4, "eventId" : 4 },
+      { "id" : 5, "resourceId" : 5, "eventId" : 5 },
+      { "id" : 6, "resourceId" : 5, "eventId" : 2 }
+    ]
+  },
+  "dependencies" : {
+    "rows" : [
+      { "id" : 1, "fromEvent" : 1, "toEvent" : 2 },
+      { "id" : 2, "fromEvent" : 2, "toEvent" : 3 },
+      { "id" : 3, "fromEvent" : 3, "toEvent" : 4 },
+      { "id" : 4, "fromEvent" : 4, "toEvent" : 5 }
+    ]
+  }
+}

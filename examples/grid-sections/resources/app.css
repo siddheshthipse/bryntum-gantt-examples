@@ -1,0 +1,26 @@
+.b-status-column-cell{
+  font-size:0.8em;
+}
+.b-status-column-cell i::before{
+  margin-inline-end:0.5em;
+}
+.b-status-column-cell .Started{
+  color:#bbb;
+}
+.b-status-column-cell .Late{
+  color:#ff5722;
+}
+.b-status-column-cell .Completed{
+  color:#34d844;
+}
+
+.b-action-ct{
+  width:100%;
+  justify-content:space-around;
+}
+.b-action-ct .b-action-item{
+  color:#666;
+  font-size:1.1em;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,77 @@
+.filters-panel,
+.filters-panel .b-panel .b-panel-body-wrap{
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.b-gantttaskfacetfilter,
+.b-gantttaskfacetfilter .b-box-center,
+.filters-panel > .b-box-center,
+.filters-panel .b-hbox > .b-box-center,
+.filters-panel .b-vbox > .b-box-center{
+  flex-shrink:0;
+}
+
+.filters-panel > .b-panel-body-wrap > .b-panel-content{
+  padding:0;
+}
+
+.filters-panel .b-checkbox > .b-field-inner .b-checkbox-label:before{
+  margin-inline-end:0.8em;
+}
+
+.b-panel-header.b-panel-ui-toolbar.b-gantttaskfacetfilter-header{
+  font-weight:500;
+  padding:1em;
+}
+
+.b-gantttaskfacetfilter-header.b-panel-header.b-panel-ui-toolbar .b-header-title{
+  font-size:0.9em;
+}
+
+.b-panel-header.b-panel-ui-toolbar.b-gantttaskfacetfilter-header .b-icon{
+  height:1em;
+}
+
+.b-gantttaskfacetfilter-item-active{
+  font-weight:600;
+}
+
+.b-gantttaskfacetfilter .b-slidetoggle .b-slidetoggle-label, :not(.b-fieldset-has-label) > .b-checkbox .b-checkbox-label{
+  text-transform:none;
+}
+
+.b-prio{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:1em;
+  margin-left:0.5em;
+  padding:0.3em 1em;
+  color:#fff;
+}
+
+.b-prio-high{
+  background-color:#f44336;
+}
+
+.b-prio-medium{
+  background-color:#ff9800;
+}
+
+.b-prio-low{
+  background-color:#406ffb;
+}
+
+.b-panel-header.b-panel-ui-toolbar.b-gantttaskfacetfilter-header{
+  height:3.5em;
+}
+
+.b-gantt .b-toolbar{
+  --toolbar-min-size:Calc(3.5em - 1px);
+}
+.b-gantt .b-toolbar .b-button{
+  min-height:2.5em;
+}
+
+/*# sourceMappingURL=app.css.map */

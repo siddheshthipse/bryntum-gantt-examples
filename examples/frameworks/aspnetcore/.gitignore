@@ -1,0 +1,5 @@
+.vs
+**/bin
+**/obj
+**/wwwroot/app/build
+**/wwwroot/app/node_modules

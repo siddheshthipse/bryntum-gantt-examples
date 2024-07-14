@@ -1,0 +1,7 @@
+{
+  ".b-grid-header[data-column=name]": {
+    "title": "Filtering tasks",
+    "content": "Use filter fields in the column header",
+    "align": "l0-r0"
+  }
+}

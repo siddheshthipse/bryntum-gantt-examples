@@ -1,0 +1,99 @@
+// GANTT STYLING
+// Alter grid variables before including classic.scss below to override defaults
+
+$custom-highlight-color             : #9c27b0;
+$line-color                         : #770e89;
+$gantt-task-background-color        : #60a40c;
+$gantt-parent-background-color      : tomato;
+$gantt-milestone-background-color   : #fa5b0c;
+
+// Headers
+$grid-header-background-color       : transparent;
+$grid-header-font-weight            : 700;
+$grid-header-border-color           : #ddd;
+$grid-header-hover-background-color : transparent;
+$grid-header-icon-color             : #000;
+
+// Cells
+$grid-cell-border-color             : lighten($grid-header-border-color, 5);
+$grid-cell-font-weight              : 400;
+
+// Focused cell
+$grid-cell-focused-outline-color    : #ccc;
+$grid-cell-focused-border-radius    : 4px;
+
+// WIDGET STYLING
+
+// Shared among widgets
+$widget-font-weight                 : 400;
+$widget-text-bright-color           : #ffffff;
+$widget-border-width                : 1px;
+$widget-border-radius               : 4px;
+
+// This path will need to be adjusted if your project structure is different
+$fa-font-path                       : '../../../build/fonts';
+
+// Extend the classic theme
+@import '../../../resources/sass/themes/classic.scss';
+
+// Override the theme-info rule with our theme info
+.b-theme-info:before {
+    content : '{"name":"Custom"}';
+}
+
+// Overrides for things that cannot currently be addressed using variables above
+
+.b-grid {
+    border                     : 2px solid $custom-highlight-color;
+    background-color           : #fff;
+    border-bottom-left-radius  : 4px;
+    border-bottom-right-radius : 4px;
+}
+
+// Want thicker bottom border in headers
+.b-grid .b-grid-header-container {
+    border-bottom-width : 2px;
+}
+
+// ...and no right border
+.b-grid-headers .b-grid-header {
+    border-inline-end-color : transparent;
+}
+
+// No right border for cells either
+.b-grid-subgrid .b-grid-cell {
+    border-inline-end-color : transparent;
+}
+
+// DEMO SPECIFIC, NOT PART OF THE THEME
+
+// Font, grid and widgets inherits whatever is used
+body {
+    font-family      : "Helvetica Neue", Helvetica, Arial, sans-serif;
+    visibility       : visible;
+    background-color : #888;
+}
+
+// Give demo header in another color
+.demo-header {
+    background-color        : $custom-highlight-color;
+    border-top-left-radius  : 4px;
+    border-top-right-radius : 4px;
+}
+
+//  Some padding, just because
+div#container {
+    padding    : 3em;
+    // Other demos have strict height settings, we want to be sure padding is applied
+    width      : auto !important;
+    height     : auto !important;
+    min-height : auto;
+}
+
+// Hide irrelevant combos in info popup
+#size-combo,
+#hintButton,
+#hintCheck {
+    display : none !important;
+}
+
